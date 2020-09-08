@@ -1,3 +1,90 @@
+# 新知识点
+
+理解`GOPATH`的重要性，亦即 Go 语言源码的组织方式。
+
+以`go build`命令为例，搞清楚开始匹配的其实相对路径。
+
+### import 包管理
+
+环境如下（首先确保如下环境变量设置正确）：
+
+```bash
+➜ go env -w GO111MODULE=auto
+➜ pwd
+/home/renyddd/work/src/github.com/renyddd
+➜ mkdir demox
+➜ cd demox
+```
+
+编辑文件`demox.go`如下：
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+        fmt.Println("hello come from package main!")
+}
+```
+
+表明该代码属于 main 包，运行后即可得到相应输出。
+
+>  [working directory is not part of a module 问题解决](https://stackoverflow.com/questions/61921282/golang-cannot-find-module-providing-package-package-name-working-directory-is)，这些报错无法解决的原因还是因为你对其基础的不了解。
+
+再进行代码的拆分，将输出功能移至 libx 库中：
+
+```bash
+➜ mkdir lib
+➜ cd lib  
+```
+
+编辑 demox_libx.go 文件如下：
+
+```go
+package libx
+
+import "fmt"
+
+func Hello() {
+        fmt.Println("come from package libx")
+}
+```
+
+再通过相对路径对该包进行安装，便会生成如下文件结构：
+
+```bash
+➜ go install github.com/renyddd/demox/libx
+
+➜ tree /home/renyddd/work
+├── pkg
+│   ├── linux_amd64
+│   │   └── github.com
+│   │       └── renyddd
+│   │           └── demox
+│   │               └── libx.a
+```
+
+再进行修改 demox.go 文件为：
+
+```go
+package main
+
+import (
+        "github.com/renyddd/demox/lib"
+)
+
+func main() {
+        libx.Hello()
+}
+```
+
+
+
+
+
+# 旧文
+
 Go 或者你可以称其为 Golang，是由谷歌团队以及开源社区的贡献者们开发的开源编程语言。2007 年 9 月 Go 的设计者之中就包括肯·汤普逊，并于两年后宣布推出。
 
 [https://golang.org/](https://golang.org/) 是 Go 的官网；
@@ -22,6 +109,8 @@ work
 ```
 
 该 work 工作目录中的 src 存放着你工程中的源文件，bin 目录中存放着编译安装之后的可执行文件，pkg 中则为包文件。
+
+> 你可以把 GOPATH 简单理解成 Go 语言的工作目录，它的值是一个目录的路径，也可以是多个目录路径，每个目录都代表 Go 语言的一个工作区（workspace）。
 
 有关 go 程序的子命令，你都可以在命令行下获得帮助：
 
