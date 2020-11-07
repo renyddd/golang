@@ -8,6 +8,11 @@ func main() {
 
 	fmt.Println(isValid("(]"))
 }
+
+func isValid2(s string) bool {
+
+}
+
 func isValid(s string) bool {
 	if len(s)%2 > 0 {
 		return false
