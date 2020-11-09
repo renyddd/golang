@@ -11,7 +11,7 @@ func main() {
 	head2 := MakeListNode([]int{7,9,12,45})
 	head2.PrintList()
 
-	newHead := mergeTwoLists(head, head2)
+	newHead := mergeTwoLists2(head, head2)
 	newHead.PrintList()
 }
 
@@ -79,4 +79,29 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 		l2.Next = mergeTwoLists(l1, l2.Next)
 		return l2
 	}
+}
+
+func mergeTwoLists2(l1, l2 *ListNode) * ListNode {
+	preHead := &ListNode{
+		Val: -1,
+		Next: nil,
+	}
+	p := preHead
+
+	for l1 != nil && l2 != nil {
+		if l1.Val < l2.Val {
+			p.Next = l1
+			l1 = l1.Next
+		} else {
+			p.Next = l2
+			l2 = l2.Next
+		}
+		p = p.Next
+	}
+	if l1 == nil {
+		p.Next = l2
+	} else {
+		p.Next = l1
+	}
+	return preHead.Next
 }

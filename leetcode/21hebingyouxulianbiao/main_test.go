@@ -7,6 +7,18 @@ import (
 	"time"
 )
 
+func TestUseful(t *testing.T) {
+	ss := []string{
+		"hello",
+		"world",
+		"sixuan",
+		"bob",
+	}
+	t.Log(ss)
+	sort.Strings(ss)
+	t.Log(ss)
+}
+
 func TestMoreTimes(t *testing.T) {
 	MergeTimes(10)
 }
@@ -30,7 +42,7 @@ func MergeTimes(n int) {
 		sort.Sort(n2)
 		h2 := MakeListNode(n2)
 
-		newhead := mergeTwoLists(h1, h2)
+		newhead := mergeTwoLists2(h1, h2)
 		newhead.PrintList()
 	}
 }
