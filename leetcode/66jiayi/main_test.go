@@ -28,6 +28,6 @@ func TestPlusOneRecursion(t *testing.T) {
 	}
 
 	for _, v := range nn {
-		t.Log(plusOneRecursionIn(v))
+		t.Log(plusOneRecursion(v))
 	}
 }
