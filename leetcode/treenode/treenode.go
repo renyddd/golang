@@ -1,6 +1,8 @@
 package treenode
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // https://en.wikipedia.org/wiki/Tree_traversal#Pre-order_(NLR)
 
@@ -50,5 +52,12 @@ func BuildA213TmpTree() *TreeNode {
 		Left: l1,
 		Right: r1,
 	}
+	return head
+}
+
+func BuildSymmetric811Tree() *TreeNode {
+	l1 := &TreeNode{1, nil, nil}
+	r1 := &TreeNode{1, nil, nil}
+	head := &TreeNode{8, l1, r1}
 	return head
 }
