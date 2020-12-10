@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="" />
+    <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gopl-zh/interface_expr/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/interface_expr/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/interface_nethttp/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/interface_sorter/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/interface_writer/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/hello/hello.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/hello_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/hello/hello_test.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,11 +39,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jo0qk7Uw5LwWrody2q8CNPa4CH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
@@ -30,7 +61,15 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build hello.go">
+    <configuration name="go build hello.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="golang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/hello/hello.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="golang" />
       <working_directory value="$PROJECT_DIR$" />
@@ -41,6 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build hello.go" />
         <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
@@ -49,27 +89,50 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1028" height="569" key="GridCell.Tab.0.bottom" timestamp="1604458729568">
-      <screen x="-1080" y="-1080" width="1080" height="1920" />
+    <state width="1868" height="291" key="GridCell.Tab.0.bottom" timestamp="1606719581235">
+      <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1028" height="569" key="GridCell.Tab.0.bottom/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604458729568" />
-    <state width="1028" height="569" key="GridCell.Tab.0.center" timestamp="1604458729565">
-      <screen x="-1080" y="-1080" width="1080" height="1920" />
+    <state width="1868" height="291" key="GridCell.Tab.0.bottom/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@0.-1080.1920.1080" timestamp="1606719581235" />
+    <state width="1868" height="291" key="GridCell.Tab.0.center" timestamp="1606719581232">
+      <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1028" height="569" key="GridCell.Tab.0.center/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604458729565" />
-    <state width="1028" height="569" key="GridCell.Tab.0.left" timestamp="1604458729564">
-      <screen x="-1080" y="-1080" width="1080" height="1920" />
+    <state width="1868" height="291" key="GridCell.Tab.0.center/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@0.-1080.1920.1080" timestamp="1606719581232" />
+    <state width="1868" height="291" key="GridCell.Tab.0.left" timestamp="1606719581230">
+      <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1028" height="569" key="GridCell.Tab.0.left/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604458729564" />
-    <state width="1028" height="569" key="GridCell.Tab.0.right" timestamp="1604458729566">
-      <screen x="-1080" y="-1080" width="1080" height="1920" />
+    <state width="1868" height="291" key="GridCell.Tab.0.left/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@0.-1080.1920.1080" timestamp="1606719581230" />
+    <state width="1868" height="291" key="GridCell.Tab.0.right" timestamp="1606719581234">
+      <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1028" height="569" key="GridCell.Tab.0.right/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604458729566" />
-    <state x="-1080" y="-569" key="SettingsEditor" timestamp="1604455340086">
-      <screen x="-1080" y="-1080" width="1080" height="1920" />
+    <state width="1868" height="291" key="GridCell.Tab.0.right/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@0.-1080.1920.1080" timestamp="1606719581234" />
+    <state x="0" y="223" key="SettingsEditor" timestamp="1607322897563">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="-1080" y="-569" key="SettingsEditor/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604455340086" />
+    <state x="0" y="223" key="SettingsEditor/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1607322897563" />
     <state x="-959" y="-636" width="838" height="1032" key="search.everywhere.popup" timestamp="1604458839336">
       <screen x="-1080" y="-1080" width="1080" height="1920" />
     </state>
