@@ -20,14 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gopl-zh/interface_expr/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gopl-zh/interface_expr/main_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gopl-zh/interface_nethttp/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gopl-zh/interface_sorter/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gopl-zh/interface_writer/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/00_simple_factory/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/01_adapter/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/01_factory_method/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/builder_pattern/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/goroutines/channel/nilstruct.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/goroutines/channel/pipelines.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/goroutines/channel/pipelines2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/goroutines/channel/select.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/goroutines/channel/select_even_number.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/goroutines/channel/walk_dir.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/goroutines/chat.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/goroutines/goroutines_net/dial.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/goroutines/goroutines_net/listener.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/goroutines/goroutines_spinner/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/interface/interface_expr/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/interface/interface_expr/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/interface/interface_nethttp/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/interface/interface_sorter/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/interface/interface_writer/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/test/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/hello/hello.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/hello_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/hello/hello_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopl-zh/interface_expr/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopl-zh/interface_expr/main_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopl-zh/interface_nethttp/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopl-zh/interface_sorter/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopl-zh/interface_writer/main.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
