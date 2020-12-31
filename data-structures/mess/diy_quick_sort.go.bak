@@ -1,0 +1,40 @@
+package main
+
+import "fmt"
+
+func partition(a []int, start, end int) int {
+	left, right := start, end
+	pivot := end
+	for left < right {
+		if a[left] > a[pivot] {
+			if a[right] < a[pivot] {
+				a[left], a[right] = a[right], a[left]
+			} else {
+				right--
+			}
+		} else {
+			left++
+		}
+	}
+	a[left], a[pivot] = a[pivot], a[left]
+	return left
+}
+
+func separateSort(a []int, start, end int) {
+	if start >= end {
+		return
+	}
+	pivot := partition(a, start, end)
+	separateSort(a, start, pivot-1)
+	separateSort(a, pivot+1, end)
+}
+
+func qsort(a []int) {
+	separateSort(a, 0, len(a)-1)
+}
+
+func main() {
+	a := []int{3, 2, 5, 8, 4, 7, 6, 9, 1, 0}
+	qsort(a)
+	fmt.Println(a)
+}
