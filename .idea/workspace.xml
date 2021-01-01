@@ -20,12 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gopl-zh/goroutines/bank.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gopl-zh/goroutines/duplicate_suppression/memo4.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gopl-zh/goroutines/memoizing/memo1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gopl-zh/goroutines/mutex/bank2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gopl-zh/goroutines/mutex/bank3.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/time.geekbang/graph/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/time.geekbang/graph/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/time.geekbang/heap/official/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/time.geekbang/heap/official/main_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/LinkedList.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/QueueBasedOnArray.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/QueueBasedOnLinkedList.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/QueueCircularQueue.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/binary_tree.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/container_list.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/diy_quick_sort.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/diy_quick_sort.go.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/list_learn.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/nice_binary_tree.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/quick_sort.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/sort_learn.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/stack.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/stack_array.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/stack_linkedList.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/110pinghengerchashu/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/110pinghengerchashu/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/110pinghengerchashu/main2.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/110pinghengerchashu/main2.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,34 +122,39 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1868" height="291" key="GridCell.Tab.0.bottom" timestamp="1606719581235">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state width="1028" height="557" key="GridCell.Tab.0.bottom" timestamp="1609375161915">
+      <screen x="-1080" y="-734" width="1080" height="1920" />
     </state>
     <state width="1028" height="569" key="GridCell.Tab.0.bottom/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604458729568" />
     <state width="1868" height="291" key="GridCell.Tab.0.bottom/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@0.-1080.1920.1080" timestamp="1606719581235" />
-    <state width="1868" height="291" key="GridCell.Tab.0.center" timestamp="1606719581232">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state width="1028" height="557" key="GridCell.Tab.0.bottom/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1609375161915" />
+    <state width="1028" height="557" key="GridCell.Tab.0.center" timestamp="1609375161912">
+      <screen x="-1080" y="-734" width="1080" height="1920" />
     </state>
     <state width="1028" height="569" key="GridCell.Tab.0.center/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604458729565" />
     <state width="1868" height="291" key="GridCell.Tab.0.center/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@0.-1080.1920.1080" timestamp="1606719581232" />
-    <state width="1868" height="291" key="GridCell.Tab.0.left" timestamp="1606719581230">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state width="1028" height="557" key="GridCell.Tab.0.center/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1609375161912" />
+    <state width="1028" height="557" key="GridCell.Tab.0.left" timestamp="1609375161910">
+      <screen x="-1080" y="-734" width="1080" height="1920" />
     </state>
     <state width="1028" height="569" key="GridCell.Tab.0.left/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604458729564" />
     <state width="1868" height="291" key="GridCell.Tab.0.left/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@0.-1080.1920.1080" timestamp="1606719581230" />
-    <state width="1868" height="291" key="GridCell.Tab.0.right" timestamp="1606719581234">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state width="1028" height="557" key="GridCell.Tab.0.left/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1609375161910" />
+    <state width="1028" height="557" key="GridCell.Tab.0.right" timestamp="1609375161913">
+      <screen x="-1080" y="-734" width="1080" height="1920" />
     </state>
     <state width="1028" height="569" key="GridCell.Tab.0.right/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604458729566" />
     <state width="1868" height="291" key="GridCell.Tab.0.right/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@0.-1080.1920.1080" timestamp="1606719581234" />
+    <state width="1028" height="557" key="GridCell.Tab.0.right/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1609375161913" />
     <state x="0" y="223" key="SettingsEditor" timestamp="1607322897563">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="-1080" y="-569" key="SettingsEditor/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604455340086" />
     <state x="0" y="223" key="SettingsEditor/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1607322897563" />
-    <state x="-959" y="-636" width="838" height="1032" key="search.everywhere.popup" timestamp="1604458839336">
-      <screen x="-1080" y="-1080" width="1080" height="1920" />
+    <state x="-959" y="-290" width="838" height="1032" key="search.everywhere.popup" timestamp="1609468000620">
+      <screen x="-1080" y="-734" width="1080" height="1920" />
     </state>
     <state x="-959" y="-636" width="838" height="1032" key="search.everywhere.popup/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604458839336" />
+    <state x="-959" y="-290" width="838" height="1032" key="search.everywhere.popup/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1609468000620" />
   </component>
 </project>
