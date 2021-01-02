@@ -20,28 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data-structures/time.geekbang/graph/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-structures/time.geekbang/graph/main_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-structures/time.geekbang/heap/official/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-structures/time.geekbang/heap/official/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/cli/app1/cmd/list.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/cli/app1/cmd/root.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/cli/app1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/cli/learn_cobra/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/runtime/object/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/LinkedList.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/QueueBasedOnArray.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/QueueBasedOnLinkedList.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/QueueCircularQueue.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/binary_tree.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/container_list.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/diy_quick_sort.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/diy_quick_sort.go.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/list_learn.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/nice_binary_tree.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/quick_sort.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/sort_learn.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/stack.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/stack_array.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/stack_linkedList.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/110pinghengerchashu/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/110pinghengerchashu/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/110pinghengerchashu/main2.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/110pinghengerchashu/main2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
