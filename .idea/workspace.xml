@@ -20,14 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/cli/app1/cmd/list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/cli/app1/cmd/root.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/cli/app1/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/cli/learn_cobra/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/runtime/object/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl-zh/interface/understandin_interface/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/111erchashuzuixiaoshendu/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopl-zh/interface/interface_writer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/gopl-zh/interface/interface_writer/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/cli/app1/cmd/list.go" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/cli/app1/cmd/list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/cli/app1/cmd/root.go" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/cli/app1/cmd/root.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/cli/app1/cmd/version.go" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/cli/app1/cmd/version.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/cli/app1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/cli/app1/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/runtime/object/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/runtime/object/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,16 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
-  <component name="RunManager" selected="Go Build.go build hello.go">
+  <component name="RunManager" selected="Go Build.go build github.com/renyddd/golang/gopl-zh/interface/interface_writer">
+    <configuration name="go build github.com/renyddd/golang/gopl-zh/interface/interface_writer" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="golang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/gopl-zh/interface/interface_writer/main.go" />
+      <package value="github.com/renyddd/golang/gopl-zh/interface/interface_writer" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build hello.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="golang" />
       <working_directory value="$PROJECT_DIR$" />
@@ -80,6 +90,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/renyddd/golang/gopl-zh/interface/interface_writer" />
         <item itemvalue="Go Build.go build hello.go" />
         <item itemvalue="Go Build.go build main.go" />
       </list>
@@ -108,30 +119,34 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1028" height="557" key="GridCell.Tab.0.bottom" timestamp="1609375161915">
+    <state x="-855" y="-42" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1609665298506">
+      <screen x="-1080" y="-734" width="1080" height="1920" />
+    </state>
+    <state x="-855" y="-42" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1609665298506" />
+    <state width="1028" height="547" key="GridCell.Tab.0.bottom" timestamp="1609639638082">
       <screen x="-1080" y="-734" width="1080" height="1920" />
     </state>
     <state width="1028" height="569" key="GridCell.Tab.0.bottom/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604458729568" />
     <state width="1868" height="291" key="GridCell.Tab.0.bottom/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@0.-1080.1920.1080" timestamp="1606719581235" />
-    <state width="1028" height="557" key="GridCell.Tab.0.bottom/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1609375161915" />
-    <state width="1028" height="557" key="GridCell.Tab.0.center" timestamp="1609375161912">
+    <state width="1028" height="547" key="GridCell.Tab.0.bottom/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1609639638082" />
+    <state width="1028" height="547" key="GridCell.Tab.0.center" timestamp="1609639638080">
       <screen x="-1080" y="-734" width="1080" height="1920" />
     </state>
     <state width="1028" height="569" key="GridCell.Tab.0.center/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604458729565" />
     <state width="1868" height="291" key="GridCell.Tab.0.center/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@0.-1080.1920.1080" timestamp="1606719581232" />
-    <state width="1028" height="557" key="GridCell.Tab.0.center/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1609375161912" />
-    <state width="1028" height="557" key="GridCell.Tab.0.left" timestamp="1609375161910">
+    <state width="1028" height="547" key="GridCell.Tab.0.center/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1609639638080" />
+    <state width="1028" height="547" key="GridCell.Tab.0.left" timestamp="1609639638078">
       <screen x="-1080" y="-734" width="1080" height="1920" />
     </state>
     <state width="1028" height="569" key="GridCell.Tab.0.left/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604458729564" />
     <state width="1868" height="291" key="GridCell.Tab.0.left/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@0.-1080.1920.1080" timestamp="1606719581230" />
-    <state width="1028" height="557" key="GridCell.Tab.0.left/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1609375161910" />
-    <state width="1028" height="557" key="GridCell.Tab.0.right" timestamp="1609375161913">
+    <state width="1028" height="547" key="GridCell.Tab.0.left/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1609639638078" />
+    <state width="1028" height="547" key="GridCell.Tab.0.right" timestamp="1609639638081">
       <screen x="-1080" y="-734" width="1080" height="1920" />
     </state>
     <state width="1028" height="569" key="GridCell.Tab.0.right/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604458729566" />
     <state width="1868" height="291" key="GridCell.Tab.0.right/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@0.-1080.1920.1080" timestamp="1606719581234" />
-    <state width="1028" height="557" key="GridCell.Tab.0.right/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1609375161913" />
+    <state width="1028" height="547" key="GridCell.Tab.0.right/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1609639638081" />
     <state x="0" y="223" key="SettingsEditor" timestamp="1607322897563">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

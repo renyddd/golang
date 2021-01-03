@@ -22,5 +22,7 @@ func main() {
 	fmt.Println(c)
 
 	var name = "dolly"
-	c.Printf("hello, %s\n", name)
+	c = 0 // reset the counter
+	fmt.Fprintf(&c, "hello, %s", name)
+	fmt.Println(c)
 }
