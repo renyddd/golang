@@ -4,17 +4,17 @@ package main
 
 import "fmt"
 
-type Node struct {
+type Node1 struct {
 	data int
-	next *Node
+	next *Node1
 }
 
 type LinkedList struct {
-	head *Node
+	head *Node1
 }
 
 func (list *LinkedList) InsertFirst(i int) {
-	p := &Node{data: i}
+	p := &Node1{data: i}
 	if list.head != nil {
 		p.next = list.head
 	}
@@ -22,7 +22,7 @@ func (list *LinkedList) InsertFirst(i int) {
 }
 
 func (list *LinkedList) InsertLast(i int) {
-	p := &Node{data: i}
+	p := &Node1{data: i}
 	if list.head == nil {
 		list.head = p
 		return
