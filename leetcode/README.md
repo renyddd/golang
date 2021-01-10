@@ -7,19 +7,19 @@
 
 -[x] 102 Binary Tree Level Order Traversal
 
--[x] 103 Binary Tree Zigzag Level Order Traversal
+-[ ] 103 Binary Tree Zigzag Level Order Traversal
 
 -[x] 199 Binary Tree Right Side View
 
--[x] 105 Construct Binary Tree from Preorder and Inorder Traversal
+-[ ] 105 Construct Binary Tree from Preorder and Inorder Traversal
 
--[x] 106 Construct Binary Tree from Inorder and Postorder Traversal
+-[ ] 106 Construct Binary Tree from Inorder and Postorder Traversal
 
--[x] 95 Unique Binary Search Trees II
+-[ ] 95 Unique Binary Search Trees II
 
--[x] 96 Unique Binary Search Trees
+-[ ] 96 Unique Binary Search Trees
 
--[x] 98 Validate Binary Search Tree
+-[ ] 98 Validate Binary Search Tree
 
 -[x] 100 Same Tree
 
@@ -31,25 +31,25 @@
 
 -[x] 111 Minimum Depth of Binary Tree
 
--[x] 112 Path Sum
+-[ ] 112 Path Sum
 
--[x] 113 Path Sum II
+-[ ] 113 Path Sum II
 
 -[ ] 114 二叉树展开为链表
 
--[x] 129 Sum Root to Leaf Numbers
+-[ ] 129 Sum Root to Leaf Numbers
 
--[x] 257 Binary Tree Paths
+-[ ] 257 Binary Tree Paths
 
--[x] 108 Convert Sorted Array to Binary Search Tree
+-[ ] 108 Convert Sorted Array to Binary Search Tree
 
--[x] 116 Populating Next Right Pointers in Each Node
+-[ ] 116 Populating Next Right Pointers in Each Node
 
--[x] 222 Count Complete Tree Nodes
+-[ ] 222 Count Complete Tree Nodes
 
 -[x] 226 Invert Binary Tree
 
--[x] 230 Kth Smallest Element in a BST
+-[ ] 230 Kth Smallest Element in a BST
 
 -[x] 235 Lowest Common Ancestor of a Binary Search Tree
 
