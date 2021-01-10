@@ -1,15 +1,15 @@
 package main
 
 type TreeNode struct {
-	Val int
+	Val         int
 	Left, Right *TreeNode
 }
 
 func levelOrder(root *TreeNode) [][]int {
 	type Elem struct {
-		Node *TreeNode
+		Node    *TreeNode
 		Visited bool
-		Level int
+		Level   int
 	}
 
 	resWithLevel := make([]Elem, 0)
@@ -24,8 +24,8 @@ func levelOrder(root *TreeNode) [][]int {
 			if !cur_node.Visited {
 				resWithLevel = append(resWithLevel, Elem{cur_node.Node, true, cur_node.Level})
 				stack = append(stack, Elem{cur_node.Node, true, cur_node.Level})
-				stack = append(stack, Elem{cur_node.Node.Right, false, cur_node.Level+1})
-				stack = append(stack, Elem{cur_node.Node.Left, false, cur_node.Level+1})
+				stack = append(stack, Elem{cur_node.Node.Right, false, cur_node.Level + 1})
+				stack = append(stack, Elem{cur_node.Node.Left, false, cur_node.Level + 1})
 			}
 		}
 	}
