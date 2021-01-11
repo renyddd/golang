@@ -31,7 +31,7 @@
 
 -[x] 111 Minimum Depth of Binary Tree
 
--[ ] 112 Path Sum
+-[x] 112 Path Sum
 
 -[ ] 113 Path Sum II
 
