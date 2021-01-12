@@ -19,6 +19,44 @@ func hasPathSum(root *TreeNode, sum int) bool {
 	return hasPathSum(root.Left, sum-root.Val) || hasPathSum(root.Right, sum-root.Val)
 }
 
+// hasPathSum_TwoQueues 使用两个队列分别存储处理节点与运算和结果
+// 是否与迭代的层序遍历有点像？
+func hasPathSum_TwoQueues(root *TreeNode, sum int) bool {
+	if root == nil {
+		return false
+	}
+
+	nodeQueue := make([]*TreeNode, 0)
+	valQueue := make([]int, 0)
+	nodeQueue = append(nodeQueue, root)
+	valQueue = append(valQueue, root.Val)
+
+	for len(nodeQueue) > 0 {
+		cur_node := nodeQueue[0]
+		nodeQueue = nodeQueue[1:]
+		cur_val := valQueue[0]
+		valQueue = valQueue[1:]
+
+		// 判断该叶子节点累加和是否满足
+		if cur_node.Left == nil && cur_node.Right == nil {
+			if cur_val == sum {
+				return true
+			}
+		}
+
+		// 继续处理非叶子节点
+		if cur_node.Left != nil {
+			nodeQueue = append(nodeQueue, cur_node.Left)
+			valQueue = append(valQueue, cur_val + cur_node.Left.Val)
+		}
+		if cur_node.Right != nil {
+			nodeQueue = append(nodeQueue, cur_node.Right)
+			valQueue = append(valQueue, cur_val + cur_node.Right.Val)
+		}
+	}
+	return false
+}
+
 func hasPathSum_iterate(root *TreeNode, sum int) bool {
 	if root == nil {
 		return false
@@ -41,6 +79,7 @@ func hasPathSum_iterate(root *TreeNode, sum int) bool {
 				if cur_node.Node.Right != nil {
 					stack = append(stack, Elem{false, cur_node.Node.Right, cur_node.LeafSum + cur_node.Node.Right.Val})
 				} else {
+					// 处理空指针解引用的情况
 					stack = append(stack, Elem{false, cur_node.Node.Right, cur_node.LeafSum})
 				}
 
