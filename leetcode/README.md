@@ -9,7 +9,7 @@
 
 -[ ] 103 Binary Tree Zigzag Level Order Traversal
 
--[x] 199 Binary Tree Right Side View
+-[ ] 199 Binary Tree Right Side View
 
 -[ ] 105 Construct Binary Tree from Preorder and Inorder Traversal
 
@@ -35,7 +35,7 @@
 
 -[ ] 113 Path Sum II
 
--[ ] 114 二叉树展开为链表
+-[x] 114 二叉树展开为链表
 
 -[ ] 129 Sum Root to Leaf Numbers
 

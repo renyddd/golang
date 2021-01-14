@@ -1,10 +1,11 @@
 package main
 
-import (
-	"../treenode"
-)
+type TreeNode struct {
+	Val int
+	Left, Right *TreeNode
+}
 
-func maxDepth(root *treenode.TreeNode) int {
+func maxDepth(root *TreeNode) int {
 	if root == nil {
 		return 0
 	}
