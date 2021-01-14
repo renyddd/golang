@@ -20,13 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/114erchashuzhankaiweilianbiao/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/channel/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/interface/t1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/interface/t2/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/interface/t3/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/104erchashuzuidashendu/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/104erchashuzuidashendu/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/144erchashuqianxubianli/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/144erchashuqianxubianli/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/144erchashuqianxubianli/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/144erchashuqianxubianli/main_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
