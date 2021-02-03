@@ -1,6 +1,6 @@
 package main
 
-import "../treenode"
+import "github.com/renyddd/golang/leetcode/treenode"
 
 func main() {
 	return

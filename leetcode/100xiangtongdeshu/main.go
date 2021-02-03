@@ -1,8 +1,6 @@
 package main
 
-import (
-	"../treenode"
-)
+import "github.com/renyddd/golang/leetcode/treenode"
 
 type TreeNode struct {
 	Val   int

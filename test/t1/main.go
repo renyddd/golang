@@ -1,19 +1,33 @@
 package main
 
 import (
-	"fmt"
+	"context"
+	"log"
+	"time"
+
+	"github.com/go-resty/resty/v2"
 )
 
 func main() {
-	x := 1
-	y := 1
-	ress := x + y
+	rootCtx := context.Background()
 
-	fmt.Println(ress)
+	ctx, cancel := context.WithTimeout(rootCtx, 2*time.Millisecond)
+	defer cancel()
 
-	sixuan()
+	Query(ctx)
 }
 
-func sixuan() {
-	fmt.Println("崽崽")
+func Query(c context.Context) {
+	url := "https://googlefdfs.com"
+
+	client := resty.New().SetRetryCount(53)
+	resp, err := client.R().SetContext(c).Get(url)
+
+	if err != nil {
+		log.Fatalln("get", resp)
+	}
+
+
+
+	log.Println(resp.RawResponse.Status)
 }
