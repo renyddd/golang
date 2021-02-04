@@ -24,6 +24,32 @@ func BuildExpressionTreeFromString(expression string) *TreeNode {
 	return stack[0]
 }
 
+func BuildExpressionResult(expression string) int32 {
+	stack := make([]*TreeNode, 0)
+	for _, c := range expression {
+		if c != '+' && c != '-' && c != '*' && c != '/' {
+			stack = append(stack, &TreeNode{c, nil, nil})
+		} else {
+			var resVal int32
+			l, r := stack[len(stack)-1], stack[len(stack)-2]
+			stack = stack[:len(stack)-2]
+			switch c {
+			case '+':
+				resVal = l.Value + r.Value
+			case '-':
+				resVal = l.Value + r.Value
+			case '*':
+				resVal = l.Value + r.Value
+			case '/':
+				resVal = l.Value + r.Value
+			}
+			stack = append(stack, &TreeNode{resVal, nil, nil})
+		}
+	}
+
+	return stack[0].Value
+}
+
 func PrintTree(root *TreeNode) {
 	if root != nil {
 		PrintTree(root.Left)
@@ -33,7 +59,13 @@ func PrintTree(root *TreeNode) {
 }
 
 func main() {
-	res := BuildExpressionTreeFromString("ab+cde+**")
+	expression1 := "ab+cde+**"
+	res := BuildExpressionTreeFromString(expression1)
 	PrintTree(res)
+
+	expression2 := "11+2++++++" // must panic
+	expression2 = "11+1+1+"
+	// res: 196, '1' (int32) for 49
+	fmt.Println("res:", BuildExpressionResult(expression2))
 	// TODO: 如何处理计算优先级以及括号问题？
 }
