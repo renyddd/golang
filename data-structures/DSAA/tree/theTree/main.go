@@ -29,7 +29,7 @@ func ListDirectory(D *TreeNode) {
 	ListDir(D, 0)
 }
 
-func main() {
+func BuildTree1() {
 	l2n2 := &TreeNode{"l2n2", "file", nil, nil}
 	l3n0 := &TreeNode{"l3n0", "file", nil, nil}
 	l2n1 := &TreeNode{"l2n1", "dir", l3n0, l2n2}
@@ -41,4 +41,39 @@ func main() {
 	root := &TreeNode{"root", "dir", l1n0, nil}
 
 	ListDirectory(root)
+}
+
+type TreeNodeWithWeight struct {
+	Name string
+	Value int
+	// 完全可以通过 FirstChild 的值是否为空来判断该节点的类型，目录还是文件
+	FirstChild, NextSibling *TreeNodeWithWeight
+}
+
+func SizeDirectory(D *TreeNodeWithWeight) int {
+	var TotalSize int
+	if D != nil {
+		TotalSize += D.Value
+		if D.FirstChild != nil {
+			for p := D.FirstChild; p != nil; p = p.NextSibling {
+				TotalSize += SizeDirectory(p)
+			}
+		}
+	}
+	return TotalSize
+}
+
+func BuildTree2() {
+	l3n0 := &TreeNodeWithWeight{"l3n0", 10, nil, nil}
+	l1n2 := &TreeNodeWithWeight{"l1n2", 10, nil,nil}
+	l1n1 := &TreeNodeWithWeight{"l1n1", 6, nil, l1n2}
+	l2n0 := &TreeNodeWithWeight{"l2n0", 5, l3n0, nil}
+	l1n0 := &TreeNodeWithWeight{"l1n0", 1, l2n0, l1n1}
+	root := &TreeNodeWithWeight{"root", 1, l1n0, nil}
+
+	fmt.Println(SizeDirectory(root))
+}
+
+func main() {
+	BuildTree2()
 }

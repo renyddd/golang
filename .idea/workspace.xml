@@ -20,20 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gopl-zh/reflect/typeof/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/105congqianxuyuzhongxubianligouzaoerchashu/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/199erchashudeyoushitu/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presist/net/http/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fdfa.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/testCobra/cmd/c1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/testCobra/cmd/root.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/testCobra/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/DSAA/tree/expressionTree/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/100xiangtongdeshu/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/100xiangtongdeshu/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/101duichenerchashu/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/101duichenerchashu/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/t1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/t1/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/DSAA/tree/theTree/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/DSAA/tree/theTree/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
