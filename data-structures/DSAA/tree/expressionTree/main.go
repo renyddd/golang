@@ -50,12 +50,17 @@ func BuildExpressionResult(expression string) int32 {
 	return stack[0].Value
 }
 
-func PrintTree(root *TreeNode) {
+func printTree(root *TreeNode) {
 	if root != nil {
-		PrintTree(root.Left)
+		printTree(root.Left)
 		fmt.Printf("%c", root.Value)
-		PrintTree(root.Right)
+		printTree(root.Right)
 	}
+}
+
+func PrintTree(root *TreeNode) {
+	printTree(root)
+	fmt.Println()
 }
 
 func main() {

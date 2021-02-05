@@ -48,7 +48,7 @@ func FindMin(T SearchTree) Position {
 func FindMax(T SearchTree) Position {
 	if T != nil {
 		p := T
-		for ; p != nil; p = p.Right {
+		for ; p.Right != nil; p = p.Right {
 		}
 		return Position(p)
 	} else {
@@ -81,6 +81,46 @@ func Insert(X ElementType, T SearchTree) SearchTree {
 	return T
 }
 
+func InsertIteration(X ElementType, T SearchTree) SearchTree {
+	if T == nil {
+		return &TreeNode{X, nil, nil}
+	}
+	if X == T.Element {
+		return T
+	} else if X < T.Element {
+		T.Left =  InsertIteration(X, T.Left)
+	} else {
+		T.Right = InsertIteration(X, T.Right)
+	}
+	return T
+}
+
+func Delete(X ElementType, T SearchTree) SearchTree {
+	if T == nil {
+		return nil
+	} else if X < T.Element {
+		// go left
+		Delete(X, T.Left)
+	} else if X > T.Element {
+		// go right
+		Delete(X, T.Right)
+	} else // Found
+	if T.Left != nil && T.Right != nil { // two children
+		// replace with the smallest in the right subtree
+		tmp := FindMin(T.Right)
+		T.Element = tmp.Element
+		Delete(X, T.Right)
+	} else { // one or zero child
+		if T.Left == nil {
+			T = T.Right
+		} else if T.Right == nil {
+			T = T.Left
+		}
+	}
+
+	return T
+}
+
 func PrintTree(root SearchTree) {
 	if root != nil {
 		PrintTree(root.Left)
@@ -89,7 +129,7 @@ func PrintTree(root SearchTree) {
 	}
 }
 
-func main() {
+func LookSearchTree1() {
 	root := &TreeNode{4, nil, nil}
 	newT := Insert(5, root)
 	newT = Insert(1, newT)
@@ -101,4 +141,22 @@ func main() {
 	newT = Insert(6, newT)
 
 	PrintTree(newT)
+}
+
+func LookSearchTree2() {
+	root := &TreeNode{4, nil, nil}
+	newT := InsertIteration(5, root)
+	newT = InsertIteration(1, newT)
+	newT = InsertIteration(2, newT)
+	newT = InsertIteration(9, newT)
+	newT = InsertIteration(3, newT)
+	newT = InsertIteration(8, newT)
+	newT = InsertIteration(7, newT)
+	newT = InsertIteration(6, newT)
+
+	PrintTree(newT)
+}
+
+func main() {
+	LookSearchTree2()
 }

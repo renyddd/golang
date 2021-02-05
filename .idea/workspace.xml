@@ -20,9 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data-structures/DSAA/tree/searchTree/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/DSAA/tree/searchTree/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/somePkg/cobra/cmd/list.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/somePkg/cobra/cmd/root.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/somePkg/cobra/cmd/version.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/somePkg/cobra/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/somePkg/cobra/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/somePkg/cobra/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data-structures/DSAA/tree/expressionTree/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/DSAA/tree/expressionTree/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/DSAA/tree/searchTree/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/DSAA/tree/searchTree/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +69,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Go Build.go build github.com/renyddd/golang/gopl-zh/interface/interface_writer">
     <configuration name="go build github.com/renyddd/golang/gopl-zh/interface/interface_writer" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -161,12 +168,13 @@
     <state width="1028" height="547" key="GridCell.Tab.0.right/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1609639638081" />
     <state width="1740" height="294" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1611926907693" />
     <state width="1028" height="547" key="GridCell.Tab.0.right/0.23.1792.1028@0.23.1792.1028" timestamp="1609722699252" />
-    <state x="-1080" y="-352" key="SettingsEditor" timestamp="1610091875618">
-      <screen x="-1080" y="-734" width="1080" height="1920" />
+    <state x="-128" y="-897" key="SettingsEditor" timestamp="1612490003050">
+      <screen x="-128" y="-1080" width="1920" height="1080" />
     </state>
     <state x="-1080" y="-569" key="SettingsEditor/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604455340086" />
     <state x="0" y="223" key="SettingsEditor/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1607322897563" />
     <state x="-1080" y="-352" key="SettingsEditor/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1610091875618" />
+    <state x="-128" y="-897" key="SettingsEditor/-128.-1080.1920.1080/0.0.1792.1120@-128.-1080.1920.1080" timestamp="1612490003050" />
     <state x="523" y="252" width="746" height="616" key="find.popup" timestamp="1610333196236">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
