@@ -100,16 +100,16 @@ func Delete(X ElementType, T SearchTree) SearchTree {
 		return nil
 	} else if X < T.Element {
 		// go left
-		Delete(X, T.Left)
+		T.Left = Delete(X, T.Left)
 	} else if X > T.Element {
 		// go right
-		Delete(X, T.Right)
+		T.Right = Delete(X, T.Right)
 	} else // Found
 	if T.Left != nil && T.Right != nil { // two children
 		// replace with the smallest in the right subtree
 		tmp := FindMin(T.Right)
 		T.Element = tmp.Element
-		Delete(X, T.Right)
+		T.Right = Delete(X, T.Right)
 	} else { // one or zero child
 		if T.Left == nil {
 			T = T.Right

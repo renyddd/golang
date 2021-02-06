@@ -20,16 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data-structures/DSAA/tree/searchTree/main_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/somePkg/cobra/cmd/list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/somePkg/cobra/cmd/root.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/somePkg/cobra/cmd/version.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/somePkg/cobra/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/somePkg/cobra/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/somePkg/cobra/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presist/coolshell/map-reduce/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presist/interface/embedded/m1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presist/interface/embedded/m2/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presist/interface/ioc/i1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presist/interface/ioc/i2/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presist/junedayday/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presist/junedayday/chenhao/splitconfig/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/somePkg/containerd/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/DSAA/tree/expressionTree/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/DSAA/tree/expressionTree/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/DSAA/tree/searchTree/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/DSAA/tree/searchTree/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/somePkg/cobra/cmd/root.go" beforeDir="false" afterPath="$PROJECT_DIR$/somePkg/cobra/cmd/root.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
