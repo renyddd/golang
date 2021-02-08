@@ -39,11 +39,13 @@ func buildTree(preorder []int, inorder []int) *TreeNode {
 		}
 	}
 
+	// 有了 inorder 的左子树长度即可
 	left_len := len(inorder[:root_inorder_index])
 	root := &TreeNode{inorder[root_inorder_index], nil, nil}
 
+	// 记得避开 preorder 中的 0 索引即跟节点；
 	root.Left = buildTree(preorder[1:1+left_len], inorder[:root_inorder_index])
-	root.Right = buildTree(preorder[1+left_len:], inorder[root_inorder_index+1:])s
+	root.Right = buildTree(preorder[1+left_len:], inorder[root_inorder_index+1:])
 
 	return root
 }
