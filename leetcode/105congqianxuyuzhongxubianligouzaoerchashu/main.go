@@ -23,20 +23,27 @@ type TreeNode struct {
 	Left, Right *TreeNode
 }
 
+// 假设没有重复元素
+
 func buildTree(preorder []int, inorder []int) *TreeNode {
-	if len(preorder) == 0 {
+	tlen := len(preorder)
+	if tlen == 0 {
 		return nil
 	}
-	root := &TreeNode{preorder[0], nil, nil}
-	i := 0
-	for ; i < len(inorder); i++ {
-		if inorder[i] == preorder[0] {
-			break
+
+	root_value := preorder[0]
+	root_inorder_index := 0
+	for i := range inorder {
+		if inorder[i] == root_value {
+			root_inorder_index = i
 		}
 	}
 
-	root.Left = buildTree(preorder[1:i+1], inorder[0:i-1])
-	root.Right = buildTree(preorder[i+1:], inorder[i+1:])
+	left_len := len(inorder[:root_inorder_index])
+	root := &TreeNode{inorder[root_inorder_index], nil, nil}
+
+	root.Left = buildTree(preorder[1:1+left_len], inorder[:root_inorder_index])
+	root.Right = buildTree(preorder[1+left_len:], inorder[root_inorder_index+1:])s
 
 	return root
 }
