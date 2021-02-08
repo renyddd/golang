@@ -11,9 +11,9 @@
 
 -[ ] 199 Binary Tree Right Side View
 
--[ ] 105 Construct Binary Tree from Preorder and Inorder Traversal
+-[x] 105 Construct Binary Tree from Preorder and Inorder Traversal
 
--[ ] 106 Construct Binary Tree from Inorder and Postorder Traversal
+-[x] 106 Construct Binary Tree from Inorder and Postorder Traversal
 
 -[ ] 95 Unique Binary Search Trees II
 
