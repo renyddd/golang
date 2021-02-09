@@ -20,8 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/106congzhongxuyuhouxubianligouzaoerchashu/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/01_abstruct_factory/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/01_abstruct_factory/adidas.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/01_abstruct_factory/bradnShirt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/01_abstruct_factory/brandShoe.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/01_abstruct_factory/iShirt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/01_abstruct_factory/iShoe.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/01_abstruct_factory/iSportsFactory.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/01_abstruct_factory/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/01_abstruct_factory/nike.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/01_factory_method/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/297erchashudexuliehuayufanxuliehua/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/652xunzhaochongfuzishu/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/01_adapter/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/01_factory_method/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/design-pattern/01_factory_method/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/design-pattern/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
