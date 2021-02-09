@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/leetcode/700erchasousuoshuzhongdesousuo/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/230erchasousuoshuzhongdikxiaoyuansu/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/230erchasousuoshuzhongdikxiaoyuansu/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +123,10 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
+    <state x="495" y="-750" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612869862868">
+      <screen x="-128" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="495" y="-750" key="#com.intellij.fileTypes.FileTypeChooser/-128.-1080.1920.1080/0.0.1792.1120@-128.-1080.1920.1080" timestamp="1612869862868" />
     <state x="662" y="215" key="#com.intellij.ide.util.MemberChooser" timestamp="1612748251154">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
