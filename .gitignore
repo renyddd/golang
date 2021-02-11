@@ -1,4 +1,4 @@
-.idea/
-leetcode/.idea/
-test/
+.idea/*
+leetcode/.idea/*
+test/*
 *.xml

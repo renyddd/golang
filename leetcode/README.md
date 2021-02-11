@@ -19,7 +19,7 @@
 
 -[ ] 96 Unique Binary Search Trees
 
--[ ] 98 Validate Binary Search Tree
+-[x] 98 Validate Binary Search Tree
 
 -[x] 100 Same Tree
 
@@ -39,9 +39,9 @@
 
 -[ ] 129 Sum Root to Leaf Numbers
 
--[ ] 257 Binary Tree Paths
+-[x] 257 Binary Tree Paths
 
--[ ] 108 Convert Sorted Array to Binary Search Tree
+-[] 108 Convert Sorted Array to Binary Search Tree
 
 -[ ] 116 Populating Next Right Pointers in Each Node
 
