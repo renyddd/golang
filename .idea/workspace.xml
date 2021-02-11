@@ -20,16 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/108jiangyouxushuzuzhuanghuanweierchasousuoshu/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/257erchashudesuoyoulujing/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/DSAA/tree/searchTree/bfs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/DSAA/tree/searchTree/bfs_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/DSAA/tree/searchTree/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/DSAA/tree/searchTree/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/DSAA/tree/searchTree/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/DSAA/tree/searchTree/main_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fdfa.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/t1/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testCobra/cmd/c1.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testCobra/cmd/root.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testCobra/main.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

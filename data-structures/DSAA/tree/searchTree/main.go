@@ -81,6 +81,7 @@ func Insert(X ElementType, T SearchTree) SearchTree {
 	return T
 }
 
+// InsertIteration 注：这种方式构造出来的 Search Tree 为，仅根节点有两分支，其余子树均只有右子树（数据递增给出时）
 func InsertIteration(X ElementType, T SearchTree) SearchTree {
 	if T == nil {
 		return &TreeNode{X, nil, nil}
@@ -88,7 +89,8 @@ func InsertIteration(X ElementType, T SearchTree) SearchTree {
 	if X == T.Element {
 		return T
 	} else if X < T.Element {
-		T.Left =  InsertIteration(X, T.Left)
+		// 这样虽然可以连接起来子树，但是无法旋转
+		T.Left = InsertIteration(X, T.Left)
 	} else {
 		T.Right = InsertIteration(X, T.Right)
 	}
@@ -104,7 +106,7 @@ func Delete(X ElementType, T SearchTree) SearchTree {
 	} else if X > T.Element {
 		// go right
 		T.Right = Delete(X, T.Right)
-	} else // Found
+	} else                               // Found
 	if T.Left != nil && T.Right != nil { // two children
 		// replace with the smallest in the right subtree
 		tmp := FindMin(T.Right)

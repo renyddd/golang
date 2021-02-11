@@ -41,7 +41,7 @@
 
 -[x] 257 Binary Tree Paths
 
--[] 108 Convert Sorted Array to Binary Search Tree
+-[x] 108 Convert Sorted Array to Binary Search Tree
 
 -[ ] 116 Populating Next Right Pointers in Each Node
 
