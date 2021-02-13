@@ -47,3 +47,72 @@ func levelOrder(root *TreeNode) [][]int {
 
 	return retSlice
 }
+
+// levelOrderWithQueue 使用队列完成层序遍历
+func levelOrderWithQueue(root *TreeNode) [][]int {
+	if root == nil {
+		return nil
+	}
+	res := make([][]int, 0)
+	// nextLevelNodes 其实就代表着下一次待处理的队列
+	nextLevelNodes := make([]*TreeNode, 0)
+	nextLevelNodes = append(nextLevelNodes, root)
+
+	for len(nextLevelNodes) > 0 {
+		tmpLevelNodes := make([]*TreeNode, 0)
+		aLevelRes := make([]int, 0)
+
+		for _, v := range nextLevelNodes {
+			aLevelRes = append(aLevelRes, v.Val)
+			if v.Left != nil {
+				tmpLevelNodes = append(tmpLevelNodes, v.Left)
+			}
+			if v.Right != nil {
+				tmpLevelNodes = append(tmpLevelNodes, v.Right)
+			}
+		}
+
+		// TODO 需要思考，go gc 会怎么处理对这两个切片的回收？
+		// TODO 为什么使用 copy 就不行呢？
+		nextLevelNodes = tmpLevelNodes
+
+		res = append(res, aLevelRes)
+	}
+
+	return res
+}
+
+// levelOrderWithQueueByChan channel implement queue
+func levelOrderWithQueueByChan(root *TreeNode) [][]int {
+	if root == nil {
+		return nil
+	}
+	res := make([][]int, 0)
+	toProcessLevelNodes := make(chan *TreeNode,800)
+	toProcessLevelNodes <- root
+
+	for len(toProcessLevelNodes) > 0 {
+		tmpLevelNodes := make(chan *TreeNode, 100)
+		aLevelRes := make([]int, 0)
+
+		var v *TreeNode
+		for len(toProcessLevelNodes) > 0 {
+			v = <- toProcessLevelNodes
+			aLevelRes = append(aLevelRes, v.Val)
+			if v.Left != nil {
+				tmpLevelNodes <- v.Left
+			}
+			if v.Right != nil {
+				tmpLevelNodes <- v.Right
+			}
+		}
+
+		for len(tmpLevelNodes) > 0 {
+			toProcessLevelNodes <- <-tmpLevelNodes
+		}
+
+		res = append(res, aLevelRes)
+	}
+
+	return res
+}

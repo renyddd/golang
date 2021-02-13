@@ -5,6 +5,11 @@ type TreeNode struct {
 	Left, Right *TreeNode
 }
 
+// main fo gdb debug
+func main() {
+	zigzagLevelOrder(nil)
+}
+
 // 良好的注释好简洁明了的变量明明习惯简直太重要了
 func zigzagLevelOrder(root *TreeNode) [][]int {
 	if root == nil {
