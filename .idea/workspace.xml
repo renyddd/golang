@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/104erchashuzuidashendu/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/104erchashuzuidashendu/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/111erchashuzuixiaoshendu/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/111erchashuzuixiaoshendu/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/112lujingzonghe/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/112lujingzonghe/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
