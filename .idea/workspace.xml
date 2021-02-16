@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data-structures/time.geekbang/dynamici/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/time.geekbang/dynamici/package01.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/113lujingzongheer/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/112lujingzonghe/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/112lujingzonghe/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,11 +216,12 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="523" y="252" width="746" height="616" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1610333196236" />
-    <state x="-959" y="-290" width="838" height="1032" key="search.everywhere.popup" timestamp="1609468000620">
-      <screen x="-1080" y="-734" width="1080" height="1920" />
+    <state x="87" y="-830" width="1490" height="581" key="search.everywhere.popup" timestamp="1613446487586">
+      <screen x="-128" y="-1080" width="1920" height="1080" />
     </state>
     <state x="-959" y="-636" width="838" height="1032" key="search.everywhere.popup/-1080.-1080.1080.1920/0.-1080.1920.1080/0.0.1792.1120@-1080.-1080.1080.1920" timestamp="1604458839336" />
     <state x="-959" y="-290" width="838" height="1032" key="search.everywhere.popup/-1080.-734.1080.1920/0.0.1792.1120@-1080.-734.1080.1920" timestamp="1609468000620" />
+    <state x="87" y="-830" width="1490" height="581" key="search.everywhere.popup/-128.-1080.1920.1080/0.0.1792.1120@-128.-1080.1920.1080" timestamp="1613446487586" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
