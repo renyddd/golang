@@ -35,11 +35,11 @@
 
 -[x] 112 Path Sum
 
--[ ] 113 Path Sum II
+-[x] 113 Path Sum II
 
 -[x] 114 二叉树展开为链表
 
--[ ] 129 Sum Root to Leaf Numbers
+-[] 129 Sum Root to Leaf Numbers
 
 -[x] 257 Binary Tree Paths
 
