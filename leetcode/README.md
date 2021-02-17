@@ -39,13 +39,13 @@
 
 -[x] 114 二叉树展开为链表
 
--[] 129 Sum Root to Leaf Numbers
+-[x] 129 Sum Root to Leaf Numbers
 
 -[x] 257 Binary Tree Paths
 
 -[x] 108 Convert Sorted Array to Binary Search Tree
 
--[ ] 116 Populating Next Right Pointers in Each Node
+-[] 116 Populating Next Right Pointers in Each Node
 
 -[ ] 222 Count Complete Tree Nodes
 
