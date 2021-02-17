@@ -45,15 +45,15 @@
 
 -[x] 108 Convert Sorted Array to Binary Search Tree
 
--[] 116 Populating Next Right Pointers in Each Node
+-[x] 116 Populating Next Right Pointers in Each Node
 
--[ ] 222 Count Complete Tree Nodes
+-[x] 222 Count Complete Tree Nodes
 
 -[x] 226 Invert Binary Tree
 
 -[x] 230 Kth Smallest Element in a BST
 
--[ ] 235 Lowest Common Ancestor of a Binary Search Tree
+-[x] 235 Lowest Common Ancestor of a Binary Search Tree
 
 -[ ] 236 Lowest Common Ancestor of a Binary Tree
 
