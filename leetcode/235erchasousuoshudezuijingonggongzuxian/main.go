@@ -72,3 +72,14 @@ func lowestCommonAncestorOfficial(root, p, q *TreeNode) *TreeNode {
 
 	return ancestor
 }
+
+// 当然如上的过程也能用递归来改写出来
+func lowestCommonAncestorRecursion(root, p, q *TreeNode) *TreeNode {
+	if p.Val < root.Val && q.Val < root.Val {
+		return lowestCommonAncestorRecursion(root.Left, p, q)
+	} else if p.Val > root.Val && q.Val > root.Val {
+		return lowestCommonAncestorRecursion(root.Right, p, q)
+	} else {
+		return root
+	}
+}
