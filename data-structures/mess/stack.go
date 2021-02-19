@@ -6,10 +6,10 @@ import (
 )
 
 // https://studygolang.com/articles/10481
-type Stack []interface{}
+type Stack2 []interface{}
 
 func main() {
-	s := Stack{2, "dfdsfsd"}
+	s := Stack2{2, "dfdsfsd"}
 
 	fmt.Println(s)
 
@@ -24,22 +24,22 @@ func main() {
 	}
 }
 
-func (stack Stack) Len() int {
+func (stack Stack2) Len() int {
 	return len(stack)
 }
 
-func (stack *Stack) Push(value interface{}) {
+func (stack *Stack2) Push(value interface{}) {
 	*stack = append(*stack, value)
 }
 
-func (stack Stack) Top() (interface{}, error) {
+func (stack Stack2) Top() (interface{}, error) {
 	if len(stack) == 0 {
 		return nil, errors.New("Out of index, len is 0")
 	}
 	return stack[len(stack)-1], nil
 }
 
-func (stack *Stack) Pop() (interface{}, error) {
+func (stack *Stack2) Pop() (interface{}, error) {
 	theStack := *stack
 	if len(theStack) == 0 {
 		return nil, errors.New("Out of index, len is 0")
@@ -49,6 +49,6 @@ func (stack *Stack) Pop() (interface{}, error) {
 	return value, nil
 }
 
-func (stack Stack) IsEmpty() bool {
+func (stack Stack2) IsEmpty() bool {
 	return len(stack) == 0
 }

@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 // reference - https://github.com/wangzheng0822/algo/blob/master/go/12_sorts/QuickSort.go
-func partition(a []int, start, end int) int {
+func partition_d(a []int, start, end int) int {
 	left, right := start, end
 	pivot := end
 	for left < right {
@@ -24,18 +24,18 @@ func partition(a []int, start, end int) int {
 	return left
 }
 
-func separateSort(a []int, start, end int) {
+func separateSort_d(a []int, start, end int) {
 	if start >= end {
 		return
 	}
-	pivot := partition(a, start, end)
+	pivot := partition_d(a, start, end)
 	fmt.Println("the pivot is:", a[pivot])
-	separateSort(a, start, pivot-1)
-	separateSort(a, pivot+1, end)
+	separateSort_d(a, start, pivot-1)
+	separateSort_d(a, pivot+1, end)
 }
 
 func qsort(a []int) {
-	separateSort(a, 0, len(a)-1)
+	separateSort_d(a, 0, len(a)-1)
 }
 
 func main() {

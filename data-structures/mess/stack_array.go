@@ -4,12 +4,12 @@ import "fmt"
 
 const arraySize = 10
 
-type Stack struct {
+type Stack3 struct {
 	top  int
 	data [arraySize]int
 }
 
-func (s *Stack) Push(i int) bool {
+func (s *Stack3) Push(i int) bool {
 	if s.top == len(s.data) {
 		return false
 	}
@@ -18,7 +18,7 @@ func (s *Stack) Push(i int) bool {
 	return true
 }
 
-func (s *Stack) Pop() (int, bool) {
+func (s *Stack3) Pop() (int, bool) {
 	if s.top == 0 {
 		return 0, false
 	}
@@ -27,16 +27,16 @@ func (s *Stack) Pop() (int, bool) {
 	return i, true
 }
 
-func (s *Stack) Peek() int {
+func (s *Stack3) Peek() int {
 	return s.data[s.top-1]
 }
 
-func (s *Stack) IsEmpty() bool {
+func (s *Stack3) IsEmpty() bool {
 	return s.top == 0
 }
 
 func main() {
-	var s Stack
+	var s Stack3
 	s.Push(3)
 	s.Push(2)
 	s.Push(5)

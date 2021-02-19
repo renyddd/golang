@@ -2,17 +2,17 @@ package main
 
 import "fmt"
 
-type Node struct {
+type NodeS struct {
 	data int
-	next *Node
+	next *NodeS
 }
 
 type Stack struct {
-	top *Node
+	top *NodeS
 }
 
 func (list *Stack) Push(i int) {
-	p := &Node{data: i}
+	p := &NodeS{data: i}
 	if list.top != nil {
 		p.next = list.top
 	}

@@ -3,54 +3,54 @@ package main
 
 import "fmt"
 
-type Node struct {
+type RNode struct {
 	data   int
-	parent *Node
-	left   *Node
-	right  *Node
+	parent *RNode
+	left   *RNode
+	right  *RNode
 }
 
 type BinaryTree struct {
-	root *Node
+	root *RNode
 }
 
 func main() {
-	root := &Node{data: 666}
+	root := &RNode{data: 666}
 	tree := &BinaryTree{root}
 
 	tree.InsertItem(777)
 	tree.InsertItem(888)
 	tree.InsertItem(555)
 
-	InOrder(tree.root)
+	InOrderR(tree.root)
 	// 	fmt.Println(tree.root.data)
 }
 
 // try to understand callback
-func InOrder(root *Node) {
+func InOrderR(root *RNode) {
 	if root != nil {
-		InOrder(root.left)
+		InOrderR(root.left)
 		fmt.Println(root.data)
-		InOrder(root.right)
+		InOrderR(root.right)
 	}
 }
 
 func (tree *BinaryTree) InsertItem(i int) {
 	if tree.root == nil {
-		tree.root = &Node{data: i}
+		tree.root = &RNode{data: i}
 		return
 	}
 	currentNode := tree.root
 	for {
 		if i > currentNode.data {
 			if currentNode.right == nil {
-				currentNode.right = &Node{data: i, parent: currentNode}
+				currentNode.right = &RNode{data: i, parent: currentNode}
 				return
 			}
 			currentNode = currentNode.right
 		} else {
 			if currentNode.left == nil {
-				currentNode.left = &Node{data: i, parent: currentNode}
+				currentNode.left = &RNode{data: i, parent: currentNode}
 				return
 			}
 			currentNode = currentNode.left
@@ -58,7 +58,7 @@ func (tree *BinaryTree) InsertItem(i int) {
 	}
 }
 
-func (tree *BinaryTree) SearchItem(i int) (*Node, bool) {
+func (tree *BinaryTree) SearchItem(i int) (*RNode, bool) {
 	if tree.root == nil {
 		return nil, false
 	}
@@ -75,7 +75,7 @@ func (tree *BinaryTree) SearchItem(i int) (*Node, bool) {
 	return nil, false
 }
 
-func (tree *BinaryTree) InorderTraversal(subtree *Node, callback func(int)) {
+func (tree *BinaryTree) InorderTraversal(subtree *RNode, callback func(int)) {
 	if subtree.left != nil {
 		tree.InorderTraversal(subtree.left, callback)
 	}
@@ -85,7 +85,7 @@ func (tree *BinaryTree) InorderTraversal(subtree *Node, callback func(int)) {
 	}
 }
 
-func (tree *BinaryTree) PreorderTraversal(subtree *Node, callback func(int)) {
+func (tree *BinaryTree) PreorderTraversal(subtree *RNode, callback func(int)) {
 	callback(subtree.data)
 	if subtree.left != nil {
 		tree.PreorderTraversal(subtree.left, callback)
@@ -95,7 +95,7 @@ func (tree *BinaryTree) PreorderTraversal(subtree *Node, callback func(int)) {
 	}
 }
 
-func (tree *BinaryTree) PostorderTraversal(subtree *Node, callback func(int)) {
+func (tree *BinaryTree) PostorderTraversal(subtree *RNode, callback func(int)) {
 	if subtree.left != nil {
 		tree.PostorderTraversal(subtree.left, callback)
 	}
