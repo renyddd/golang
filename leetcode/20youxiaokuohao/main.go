@@ -1,17 +1,34 @@
 package main
 
-import (
-	"fmt"
-)
+// ref: https://leetcode-cn.com/problems/valid-parentheses/
 
-func main() {
+// isValidOfficial 来自官方解答
+func isValidOfficial(s string) bool {
+	// storeLeftStack 用栈来存储遇见的左半边括号
+	storeLeftStack := make([]byte, 0)
+	pairs := map[byte]byte{
+		')': '(',
+		']': '[',
+		'}': '{',
+	}
 
-	fmt.Println(isValid("(]"))
+	for _, v := range s {
+		// 遇见左括号
+		if val, ok := pairs[byte(v)]; !ok {
+			storeLeftStack = append(storeLeftStack, val)
+		} else {
+			storeLeftStack = storeLeftStack[:len(storeLeftStack)-1]
+			if byte(v) != val {
+				return false
+			}
+		}
+	}
+
+	return true
 }
 
-func isValid2(s string) bool {
-
-}
+/*
+ */
 
 func isValid(s string) bool {
 	if len(s)%2 > 0 {
