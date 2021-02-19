@@ -1,11 +1,12 @@
-//main 这里借助 go 官方的实现：https://golang.org/src/container/heap/heap.go
+// main 这里借助 go 官方的实现：https://golang.org/src/container/heap/heap.go
+// 需要关注完全二叉树以数组存储时的性质
 package heap
 
 import (
 	"sort"
 )
 
-// 堆是一颗树，其节点都是其子树上的最小节点
+// 堆是一颗完全二叉树，其节点都是其子树上的最小节点
 // 堆也是最常用的一种实现优先队列的方式
 
 // Interface 注意如下接口中的 pop，push 方法（绑定了结构体的）是为了该包中堆的实现
@@ -19,7 +20,8 @@ type Interface interface {
 
 func Init(h Interface) {
 	// 堆化
-	n := h.Len() // 为实现 sort 中接口而实现
+	n := h.Len() // 为 sort 中接口而实现
+	// 从非叶子层开始
 	for i := n/2 - 1; i >= 0; i-- {
 		// 下滤
 		down(h, i, n)
@@ -30,8 +32,9 @@ func Init(h Interface) {
 func down(h Interface, i0, n int) bool {
 	i := i0
 	for {
+		// 从左孩子开始
 		j1 := 2*i + 1
-		// 注意此处的等于号，否则会因此数组越界 painc
+		// 注意此处的等于号，否则会因此数组越界 panic
 		if j1 >= n || j1 < 0 { // 当整型溢出时 j1 < 0
 			break
 		}
