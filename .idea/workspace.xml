@@ -20,17 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data-structures/DSAA/sort/bubbleSort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-structures/DSAA/sort/insertionSort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-structures/DSAA/sort/mergeSort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-structures/DSAA/sort/quickSort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-structures/DSAA/sort/sort_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/538baerchasousuoshuzhuanhuanweileijiashu/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/637erchashudecengpingjunzhi/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/mess/diy_quick_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/mess/diy_quick_sort.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/mess/nice_binary_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/mess/nice_binary_tree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/mess/stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/mess/stack.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/mess/stack_array.go" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/mess/stack_array.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/mess/stack_linkedList.go" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/mess/stack_linkedList.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
