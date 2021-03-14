@@ -20,50 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991179a4-61bc-47c6-a10f-80f37fcf0e60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gopl-zh/panic/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/206fanzhuanlianbiao/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/3wuchongfuzifudezuichangzichuan/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/3wuchongfuzifudezuichangzichuan/main_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/shunshizhenshuchushuzu/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/shunshizhenshuchushuzu/main_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/channel/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/channel/workerPool/error" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/channel/workerPool/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/closure/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/container.list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/coolshell/decorator/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/coolshell/map-reduce/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/coolshell/pipeline/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/interface/embedded/m1/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/interface/embedded/m2/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/interface/ioc/i1/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/interface/ioc/i2/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/interface/t1/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/interface/t2/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/interface/t3/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/junedayday/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/junedayday/chenhao/splitconfig/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/net/http/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persist/pool/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/somePkg/protocolbuffers/tutorial.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/time.geekbang/binary_search/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/time.geekbang/binary_search/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/121maimaigupiaodezuijiashike/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/122maimaigupiaodezuijiashikeii/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/122maimaigupiaodezuijiashikeii/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/162xunzhaofengzhi/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/322lingqianduihuan/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/69xdepingfanggen/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/69xdepingfanggen/main_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/DSAA/heap/heap.go" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/DSAA/heap/heap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presist/channel/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presist/closer/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presist/container.list.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presist/coolshell/decorator/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presist/coolshell/map-reduce/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presist/coolshell/pipeline/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presist/interface/embedded/m1/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presist/interface/embedded/m2/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presist/interface/ioc/i1/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presist/interface/ioc/i2/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presist/interface/t1/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presist/interface/t2/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presist/interface/t3/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presist/junedayday/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presist/junedayday/chenhao/splitconfig/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presist/net/http/main.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
