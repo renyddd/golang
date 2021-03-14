@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // todo 观测闭包中父函数变量的垃圾回收机制
 

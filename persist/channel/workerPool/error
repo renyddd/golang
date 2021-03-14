@@ -1,0 +1,11 @@
+worker 9 processing job 7
+worker 2 processing job 4
+worker 8 processing job 5
+worker 4 processing job 1
+worker 7 processing job 6
+worker 10 processing job 8
+worker 3 processing job 2
+worker 5 processing job 3
+worker 6 processing job 9
+worker 1 processing job 10
+signal: interrupt

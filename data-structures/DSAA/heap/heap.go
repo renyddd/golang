@@ -32,7 +32,7 @@ func Init(h Interface) {
 func down(h Interface, i0, n int) bool {
 	i := i0
 	for {
-		// 从左孩子开始
+		// 从左孩子开始比较
 		j1 := 2*i + 1
 		// 注意此处的等于号，否则会因此数组越界 panic
 		if j1 >= n || j1 < 0 { // 当整型溢出时 j1 < 0
