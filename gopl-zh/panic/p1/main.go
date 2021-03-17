@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // https://books.studygolang.com/gopl-zh/ch5/ch5-10.html
 // 使用panic和recover编写一个不包含return语句但能返回一个非零值的函数。
@@ -23,7 +25,7 @@ func NonReturn(v interface{}) (result interface{}) {
 	panic(v)
 }
 
-func main() {
+func main1() {
 	a := NonReturn(true)
 	fmt.Println(a)
 }

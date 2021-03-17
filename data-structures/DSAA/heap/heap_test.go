@@ -39,3 +39,11 @@ func TestHeap(t *testing.T) {
 		fmt.Printf("%d ", Pop(h))
 	}
 }
+
+func BenchmarkInit(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		h := &IntHeap{2, 1, 5, 7, 4, 9, 8, 3, 6}
+		Init(h)
+	}
+}
+

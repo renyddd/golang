@@ -10,11 +10,13 @@ import (
 // 堆也是最常用的一种实现优先队列的方式
 
 // Interface 注意如下接口中的 pop，push 方法（绑定了结构体的）是为了该包中堆的实现
-// 也是从自定与对元素中真正向末尾添加 or 删除首元素的方法
+// 也是从自定义的元素中，真正向末尾添加 or 删除首元素的方法
 // 要想从堆中添加或移除元素请使用（包名）heap.Pop or heap.Push
 type Interface interface {
 	sort.Interface
+	// 实现向尾添加
 	Push(x interface{})
+	// 实现从尾删除
 	Pop() interface{}
 }
 
@@ -87,6 +89,8 @@ func up(h Interface, j int) {
 
 // Pop 移除并且返回最小值元素
 // 时间复杂度是 O(log n)
+// 注意，因保证堆的结构性质 故在删除首元素时需要先交换首位元素
+// 因此 Interface 中的 Pop 方法交给用户实现的也是删除尾元素
 func Pop(h Interface) interface{} {
 	n := h.Len() - 1
 	// 首先将堆顶元素与末尾元素进行交换
