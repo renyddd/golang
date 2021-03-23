@@ -74,6 +74,7 @@
 
 ## 动态规划
 - 题目分类 https://leetcode-cn.com/circle/article/2Xxlw3/
+- [x] 198 打家劫舍
 - [x] 416 分割等和子集
 - [x] 494 目标和
 - [x] 322 零钱兑换

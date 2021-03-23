@@ -9,7 +9,7 @@ import "log"
 */
 
 func coinChange(coins []int, amount int) int {
-	n := len(coins) // n 中硬币也就代表着 n 中可能发生状态庄毅的机会
+	n := len(coins) // n 中硬币也就代表着 n 中可能发生状态转移的机会
 	dp := make([]int, amount+1)
 	// 每个元素索引代表这每种可能的存在金额
 	// 而每个元素值代表着已用的硬币数量
