@@ -8,9 +8,9 @@ import (
 func TestStrstr(t *testing.T) {
 	s := map[string]string{
 		"hello, world": "ld",
-		"hello世界": "o世",
-		"-3fdsik99j": "k9",
-		"jfi291": "jf",
+		"hello世界":      "o世",
+		"-3fdsik99j":   "k9",
+		"jfi291":       "jf",
 	}
 
 	for k, v := range s {

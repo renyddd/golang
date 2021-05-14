@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func TestLastWord(t *testing.T)  {
+func TestLastWord(t *testing.T) {
 	m := make(map[string]int)
 	m["Hello, world"] = 5
 	m["     "] = 0

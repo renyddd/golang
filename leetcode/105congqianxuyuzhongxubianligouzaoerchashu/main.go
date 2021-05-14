@@ -16,10 +16,10 @@ preorder { [ root ]  [ == left == ] [ == right == ] }
 
 inorder  { [ == left == ]  [ root ] [ == right == ] }
                              i
- */
+*/
 
 type TreeNode struct {
-	Val int
+	Val         int
 	Left, Right *TreeNode
 }
 

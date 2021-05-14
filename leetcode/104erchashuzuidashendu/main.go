@@ -1,7 +1,7 @@
 package main
 
 type TreeNode struct {
-	Val int
+	Val         int
 	Left, Right *TreeNode
 }
 
@@ -12,7 +12,7 @@ func maxDepth(root *TreeNode) int {
 	return max(maxDepth(root.Left), maxDepth(root.Right)) + 1
 }
 
-func max (l, r int) int {
+func max(l, r int) int {
 	if l > r {
 		return l
 	}
@@ -24,7 +24,7 @@ func maxDepth2Recursion(root *TreeNode) int {
 	if root == nil {
 		return 0
 	}
-	visitedDepth :=  make(map[int]struct{})
+	visitedDepth := make(map[int]struct{})
 
 	var PreOrder func(*TreeNode, int)
 	PreOrder = func(curNode *TreeNode, d int) {
@@ -32,10 +32,10 @@ func maxDepth2Recursion(root *TreeNode) int {
 			visitedDepth[d] = struct{}{}
 		}
 		if curNode.Left != nil {
-			PreOrder(curNode.Left, d + 1)
+			PreOrder(curNode.Left, d+1)
 		}
 		if curNode.Right != nil {
-			PreOrder(curNode.Right, d + 1)
+			PreOrder(curNode.Right, d+1)
 		}
 	}
 	// root 已算作一层，并且叶子节点并不会导致加一

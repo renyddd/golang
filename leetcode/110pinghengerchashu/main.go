@@ -1,7 +1,7 @@
 package main
 
 type TreeNode struct {
-	Val int
+	Val         int
 	Left, Right *TreeNode
 }
 
@@ -13,7 +13,7 @@ func isBalanced(root *TreeNode) bool {
 		return true
 	}
 	// 判断左右两子树高度差是否小于一
-	return abs(height(root.Left) - height(root.Right)) <= 1 &&
+	return abs(height(root.Left)-height(root.Right)) <= 1 &&
 		isBalanced(root.Left) && isBalanced(root.Right)
 }
 

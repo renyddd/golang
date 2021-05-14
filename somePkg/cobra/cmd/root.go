@@ -1,17 +1,16 @@
 package cmd
 
 import (
-
 	"github.com/spf13/cobra"
 	"k8s.io/klog"
 )
 
 func init() {
-	rootCmd.PersistentFlags().StringP("all", "a", "", "say something." )
+	rootCmd.PersistentFlags().StringP("all", "a", "", "say something.")
 }
 
 var rootCmd = &cobra.Command{
-	Use: "utils",
+	Use:   "utils",
 	Short: "utils is a collection.",
 	Run: func(cmd *cobra.Command, args []string) {
 

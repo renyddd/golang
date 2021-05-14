@@ -41,11 +41,11 @@ func connect(root *Node) *Node {
 }
 
 /* connectOfficial 官方解答，注意题目描述给定一颗**完美二叉树**
- 因此每个 Node 的链接情况就可以分为两种，
-  - 同一个父节点的，左二字对右儿子的链接
-  - 跨父节点，前一个的右儿子对后一个的左儿子的链接
- 并且遍历也可通过更新最左侧的节点来完成
- */
+因此每个 Node 的链接情况就可以分为两种，
+ - 同一个父节点的，左二字对右儿子的链接
+ - 跨父节点，前一个的右儿子对后一个的左儿子的链接
+并且遍历也可通过更新最左侧的节点来完成
+*/
 func connectOfficial(root *Node) *Node {
 	if root == nil {
 		return nil
@@ -74,7 +74,7 @@ func connectOfficial(root *Node) *Node {
 
 /*
 递归的巧妙解答：https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/solution/dong-hua-yan-shi-san-chong-shi-xian-116-tian-chong/
- */
+*/
 func conn(root *Node) {
 	if root == nil {
 		return

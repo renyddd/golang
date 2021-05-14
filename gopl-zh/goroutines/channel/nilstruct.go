@@ -17,7 +17,6 @@ func main1() {
 		}(i)
 	}
 
-
 	for range ch {
 		<-ch
 	}

@@ -54,7 +54,7 @@ func lowestCommonAncestorNotGraceful(root, p, q *TreeNode) *TreeNode {
 official solve: 只需要一次遍历但同时进行对 p 与 q 的比较，若当前节点
 同时小于或大于 p 于 q，则按照 bst 的性质进行遍历即可，若当前节点
 不同时符合上述条件，则说明到了两节点的公公祖先处即分岔点
- */
+*/
 func lowestCommonAncestorOfficial(root, p, q *TreeNode) *TreeNode {
 	if root == nil {
 		return nil

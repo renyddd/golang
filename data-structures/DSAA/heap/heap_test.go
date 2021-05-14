@@ -46,4 +46,3 @@ func BenchmarkInit(b *testing.B) {
 		Init(h)
 	}
 }
-

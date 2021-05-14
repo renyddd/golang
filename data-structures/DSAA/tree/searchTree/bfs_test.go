@@ -26,9 +26,9 @@ func TestBFS2(t *testing.T) {
 		Nums []ElementType
 	}
 	TS := []testData{
-		{&TreeNode{Element: 4}, []ElementType{1,2,3,4,5,6,7}},
-		{&TreeNode{Element: 4}, []ElementType{7,6,5,4,3,2,1}},
-		{&TreeNode{Element: 4}, []ElementType{3,6,7,4,2,1,5}},
+		{&TreeNode{Element: 4}, []ElementType{1, 2, 3, 4, 5, 6, 7}},
+		{&TreeNode{Element: 4}, []ElementType{7, 6, 5, 4, 3, 2, 1}},
+		{&TreeNode{Element: 4}, []ElementType{3, 6, 7, 4, 2, 1, 5}},
 	}
 
 	for _, v := range TS {

@@ -27,7 +27,7 @@ func MergeTimes(n int) {
 
 	for i := 0; i < n; i++ {
 
-		rand.Seed(time.Now().Unix()+int64(i))
+		rand.Seed(time.Now().Unix() + int64(i))
 		n1 := elem{}
 		n2 := elem{}
 

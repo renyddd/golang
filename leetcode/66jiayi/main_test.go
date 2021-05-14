@@ -4,10 +4,10 @@ import "testing"
 
 func TestPlusOne(t *testing.T) {
 	nn := [][]int{
-		{1,2,3},
-		{1,1,9},
+		{1, 2, 3},
+		{1, 1, 9},
 		{9},
-		{9,9,9},
+		{9, 9, 9},
 		{0},
 		{},
 	}
@@ -19,10 +19,10 @@ func TestPlusOne(t *testing.T) {
 
 func TestPlusOneRecursion(t *testing.T) {
 	nn := [][]int{
-		{1,2,3},
-		{1,1,9},
+		{1, 2, 3},
+		{1, 1, 9},
 		{9},
-		{9,9,9},
+		{9, 9, 9},
 		{0},
 		{},
 	}

@@ -5,7 +5,7 @@ import (
 )
 
 var (
-	mu sync.RWMutex
+	mu       sync.RWMutex
 	balance2 int
 )
 

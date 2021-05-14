@@ -27,7 +27,7 @@ type a2 struct {
 func (*a2) implement() {}
 
 type client struct {
-	rcli        *resty.Client
+	rcli *resty.Client
 
 	// 错误处理 TODO：
 	// 1. 一定是要于大量的请求同时进行

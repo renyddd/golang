@@ -15,7 +15,7 @@ func Generator(tail string) func(string) string {
 
 // childFunc 闭包的判断形式为何？是由父函数定义中的返回类型而定的吗？
 // 还是由 return 语句后紧跟的函数定义而判定的？
-func childFunc(s, tail  string) string {
+func childFunc(s, tail string) string {
 	return s + tail
 }
 

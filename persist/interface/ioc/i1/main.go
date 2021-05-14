@@ -76,9 +76,3 @@ func main() {
 	set.Undo()
 	fmt.Println(set)
 }
-
-
-
-
-
-

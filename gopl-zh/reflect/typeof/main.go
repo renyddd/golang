@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"os"
 	"io"
+	"os"
 	"reflect"
 	"strconv"
 )
@@ -56,7 +56,7 @@ func T2() {
 func T1() {
 	t := reflect.TypeOf(3)
 	fmt.Println(t.String()) // int
-	fmt.Println(t) // int
+	fmt.Println(t)          // int
 
 	var w io.Writer = os.Stdout
 	fmt.Println(reflect.TypeOf(w)) // *os.File

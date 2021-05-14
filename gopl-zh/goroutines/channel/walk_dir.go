@@ -56,8 +56,6 @@ func printDiskUsage(nfiles, nbytes int64) {
 	fmt.Printf("%d files %.1f GB\n", nfiles, float64(nbytes)/1e9)
 }
 
-
-
 func walkDir(dir string, fileSizes chan<- int64) {
 	for _, entry := range dirents(dir) {
 		if entry.IsDir() {

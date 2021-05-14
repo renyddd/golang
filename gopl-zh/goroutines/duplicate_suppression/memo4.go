@@ -15,7 +15,7 @@ type result struct {
 }
 
 type entry struct {
-	res result
+	res   result
 	ready chan struct{}
 }
 
@@ -27,7 +27,7 @@ type Memo struct {
 	mu          sync.Mutex
 	cache       map[string]*entry
 	cacheStatus chan string
-	usedTime chan string
+	usedTime    chan string
 }
 
 func New(f Func) *Memo {
@@ -35,7 +35,7 @@ func New(f Func) *Memo {
 		f:           f,
 		cache:       make(map[string]*entry),
 		cacheStatus: make(chan string, 1),
-		usedTime: make(chan string, 1),
+		usedTime:    make(chan string, 1),
 	}
 }
 

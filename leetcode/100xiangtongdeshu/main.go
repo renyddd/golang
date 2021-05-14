@@ -63,6 +63,7 @@ func isSameTreeBreadthFirst(p *treenode.TreeNode, q *treenode.TreeNode) bool {
 	}
 	return (len(queue1) == 0) && (len(queue2) == 0)
 }
+
 //isSameTreeBreadthFirstRebuild 用作错误记录
 //func isSameTreeBreadthFirstRebuild() {
 //		appendNotNil := func(slice []*treenode.TreeNode, elem *treenode.TreeNode) {

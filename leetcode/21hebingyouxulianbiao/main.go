@@ -5,20 +5,19 @@ import (
 )
 
 func main() {
-	head := MakeListNode([]int{1,2,3,4,7,9})
+	head := MakeListNode([]int{1, 2, 3, 4, 7, 9})
 	head.PrintList()
 
-	head2 := MakeListNode([]int{7,9,12,45})
+	head2 := MakeListNode([]int{7, 9, 12, 45})
 	head2.PrintList()
 
 	newHead := mergeTwoLists2(head, head2)
 	newHead.PrintList()
 }
 
-
 type ListNode struct {
-     Val int
-     Next *ListNode
+	Val  int
+	Next *ListNode
 }
 
 type elem []int
@@ -39,7 +38,7 @@ func (e elem) Less(i, j int) bool {
 	}
 }
 
-func (l *ListNode)PrintList(){
+func (l *ListNode) PrintList() {
 	p := l
 	for p != nil {
 		fmt.Printf("%d ", p.Val)
@@ -50,7 +49,7 @@ func (l *ListNode)PrintList(){
 
 func (l *ListNode) AddToTail(n int) *ListNode {
 	newL := &ListNode{
-		Val: n,
+		Val:  n,
 		Next: nil,
 	}
 	l.Next = newL
@@ -81,9 +80,9 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	}
 }
 
-func mergeTwoLists2(l1, l2 *ListNode) * ListNode {
+func mergeTwoLists2(l1, l2 *ListNode) *ListNode {
 	preHead := &ListNode{
-		Val: -1,
+		Val:  -1,
 		Next: nil,
 	}
 	p := preHead

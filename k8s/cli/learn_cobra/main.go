@@ -9,8 +9,8 @@ import (
 func main() {
 	var Version bool
 	var rootCmd = &cobra.Command{
-		Use: "root [sub]",
-		Short: "root command",
+		Use:     "root [sub]",
+		Short:   "root command",
 		Example: "xxx cccc ccccc",
 		Run: func(cmd *cobra.Command, args []string) {
 			fmt.Printf("Inside rootCmd run with args: %v\n", args)
@@ -21,7 +21,7 @@ func main() {
 	}
 
 	flags := rootCmd.Flags()
-	flags.BoolVarP(&Version, "version", "v", false, "Print version info" +
+	flags.BoolVarP(&Version, "version", "v", false, "Print version info"+
 		"rmation and quit")
 	_ = rootCmd.Execute()
 }

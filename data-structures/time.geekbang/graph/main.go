@@ -7,13 +7,13 @@ import (
 
 type Graph struct {
 	// the num of vertex
-	n int
+	n   int
 	adj []*list.List
 }
 
 func NewGraph(n int) *Graph {
 	g := &Graph{
-		n: n,
+		n:   n,
 		adj: make([]*list.List, n),
 	}
 	for i, _ := range g.adj {

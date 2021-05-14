@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type TreeNode struct {
-	Val int
+	Val         int
 	Left, Right *TreeNode
 }
 

@@ -4,6 +4,7 @@ type TreeNode struct {
 	Val         int
 	Left, Right *TreeNode
 }
+
 // ref: https://leetcode-cn.com/problems/binary-tree-tilt/
 
 //findTilt 完全可以递归进行处理
@@ -20,7 +21,7 @@ func findTilt(root *TreeNode) int {
 		le := doFind(root.Left)
 		ri := doFind(root.Right)
 
-		if le - ri < 0 {
+		if le-ri < 0 {
 			sum += ri - le
 		} else {
 			sum += le - ri

@@ -1,7 +1,7 @@
 package main
 
 type Node struct {
-	Val int
+	Val      int
 	Children []*Node
 }
 
@@ -25,7 +25,7 @@ func addElem(root *Node) {
 func preorder_elem(root *Node) []int {
 	type Elem struct {
 		Visited bool
-		ENode *Node
+		ENode   *Node
 	}
 
 	stack := make([]Elem, 0)
@@ -38,7 +38,7 @@ func preorder_elem(root *Node) []int {
 
 		if n.ENode != nil {
 			if n.Visited == false {
-				for i := len(n.ENode.Children)-1; i >= 0; i-- {
+				for i := len(n.ENode.Children) - 1; i >= 0; i-- {
 					stack = append(stack, Elem{false, n.ENode.Children[i]})
 				}
 				stack = append(stack, Elem{true, n.ENode})

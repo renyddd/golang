@@ -18,7 +18,7 @@ func lengthOfLastWord(s string) int {
 	}
 
 	for i := end; i >= 0; i-- {
-		if s[i] != ' '{
+		if s[i] != ' ' {
 			cnt++
 		} else {
 			break

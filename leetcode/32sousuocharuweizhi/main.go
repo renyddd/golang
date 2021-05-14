@@ -79,7 +79,7 @@ func bSearchFBigger(nums []int, target int) int {
 // bSearchLSmaller 有序集合查找最后一个小于给定值的数据
 func bSearchLSmaller(nums []int, target int) int {
 	n := len(nums)
-	l, r := 0, n - 1
+	l, r := 0, n-1
 	for l <= r {
 		m := ((r - l) >> 1) + l
 		if nums[m] > target {
@@ -92,8 +92,6 @@ func bSearchLSmaller(nums []int, target int) int {
 	}
 	return -1
 }
-
-
 
 // leetcode 题目要求的解答
 // 给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。

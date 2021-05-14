@@ -7,7 +7,7 @@ import (
 
 func main() {
 	l := list.New()
- 	l.PushBack(666)
+	l.PushBack(666)
 	l.PushBack(777)
 	l.PushFront(555)
 

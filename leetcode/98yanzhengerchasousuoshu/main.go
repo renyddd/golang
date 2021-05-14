@@ -3,7 +3,7 @@ package main
 import "math"
 
 type TreeNode struct {
-	Val int
+	Val         int
 	Left, Right *TreeNode
 }
 
@@ -29,7 +29,7 @@ func Traverse(root *TreeNode, minVal, maxVal int) bool {
 
 /*
    排序后验证
- */
+*/
 
 func isValidBST2(root *TreeNode) bool {
 	if root == nil {
@@ -51,7 +51,7 @@ func isValidBST2(root *TreeNode) bool {
 
 	// 判断条件 i >= 0 不可少，处理 [1，1] 的情况
 	for i := len(nums) - 2; i >= 0; i-- {
-		if nums[i] - nums[i+1] > 0 {
+		if nums[i]-nums[i+1] > 0 {
 			return false
 		}
 	}

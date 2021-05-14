@@ -20,7 +20,7 @@ func averageOfLevels(root *TreeNode) []float64 {
 		toProcessNodes := make([]*TreeNode, 0)
 		var sum float64 = 0
 		for _, v := range curNodes {
-			sum += float64( v.Val)
+			sum += float64(v.Val)
 			if v.Left != nil {
 				toProcessNodes = append(toProcessNodes, v.Left)
 			}

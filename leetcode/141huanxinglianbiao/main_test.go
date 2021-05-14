@@ -6,7 +6,7 @@ import (
 )
 
 func TestHasCycle(t *testing.T) {
-	n1 := []int{1,2,3,4,5,6,7}
+	n1 := []int{1, 2, 3, 4, 5, 6, 7}
 
 	h1 := listnode.MakeListNode(n1)
 	h2 := listnode.MakeListNode(n1)

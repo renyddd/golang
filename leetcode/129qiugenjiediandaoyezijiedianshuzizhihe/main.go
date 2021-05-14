@@ -73,7 +73,7 @@ func dfsOfficial(root *TreeNode, prevSum int) int {
 
 type Pair struct {
 	Node *TreeNode
-	Num int
+	Num  int
 }
 
 func sumNumberOfficialBFS(root *TreeNode) int {

@@ -30,7 +30,7 @@ var (
 	entering = make(chan client)
 	leaving  = make(chan client)
 	messages = make(chan string)
-	mainLog = make(chan string)
+	mainLog  = make(chan string)
 )
 
 func broadcaster() {

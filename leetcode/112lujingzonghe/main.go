@@ -8,7 +8,7 @@ type TreeNode struct {
 // 注意审题：给定一个二叉树和一个目标和，判断该树中是否存在根节点到叶子节点的路径，这条路径上所有节点值相加等于目标和
 /*
 ref: https://leetcode-cn.com/problems/path-sum/
- */
+*/
 
 // hasPathSum 递归
 func hasPathSum(root *TreeNode, sum int) bool {
@@ -18,9 +18,11 @@ func hasPathSum(root *TreeNode, sum int) bool {
 	if root.Left == nil && root.Right == nil {
 		if sum == root.Val {
 			return true
-		} else { return false }
+		} else {
+			return false
+		}
 	} else {
-		return hasPathSum(root.Left, sum - root.Val) || hasPathSum(root.Right, sum - root.Val)
+		return hasPathSum(root.Left, sum-root.Val) || hasPathSum(root.Right, sum-root.Val)
 	}
 }
 
@@ -51,12 +53,12 @@ func hasPathSumBFS(root *TreeNode, sum int) bool {
 
 		if curNode.Left != nil {
 			toProcessNodes = append(toProcessNodes, curNode.Left)
-			valuesQueue = append(valuesQueue, curValue + curNode.Left.Val)
+			valuesQueue = append(valuesQueue, curValue+curNode.Left.Val)
 		}
 
 		if curNode.Right != nil {
 			toProcessNodes = append(toProcessNodes, curNode.Right)
-			valuesQueue = append(valuesQueue, curValue + curNode.Right.Val)
+			valuesQueue = append(valuesQueue, curValue+curNode.Right.Val)
 		}
 	}
 
@@ -79,7 +81,7 @@ func hasPathSumDFS(root *TreeNode, sum int) bool {
 	 - 避免空指针的解引用
 	 - value stack 的赋值为增量的赋值
 	 - for 循环的条件判断需要带上当前节点不为空的判断，因为待处理栈很容易为空
-	 */
+	*/
 	for curNode != nil || len(toProcessNodesStack) > 0 {
 		for curNode != nil {
 			toProcessNodesStack = append(toProcessNodesStack, curNode)
@@ -144,14 +146,12 @@ func hasPathSumDFS(root *TreeNode, sum int) bool {
 			toProcessStack = append(toProcessStack, root.Right)
 		}
 	}
-	 */
+	*/
 }
-
-
 
 /*
  -------------------------------------------------
- */
+*/
 
 //func hasPathSum_old(root *TreeNode, sum int) bool {
 //	if root == nil {
@@ -193,11 +193,11 @@ func hasPathSum_TwoQueues(root *TreeNode, sum int) bool {
 		// 继续处理非叶子节点
 		if cur_node.Left != nil {
 			nodeQueue = append(nodeQueue, cur_node.Left)
-			valQueue = append(valQueue, cur_val + cur_node.Left.Val)
+			valQueue = append(valQueue, cur_val+cur_node.Left.Val)
 		}
 		if cur_node.Right != nil {
 			nodeQueue = append(nodeQueue, cur_node.Right)
-			valQueue = append(valQueue, cur_val + cur_node.Right.Val)
+			valQueue = append(valQueue, cur_val+cur_node.Right.Val)
 		}
 	}
 	return false

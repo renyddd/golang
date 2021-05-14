@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	head := MakeListNode([]int{1,1,2,3,3,4,7,9,9})
+	head := MakeListNode([]int{1, 1, 2, 3, 3, 4, 7, 9, 9})
 	head.PrintList()
 
 	l := deleteDuplicates(head)
@@ -38,11 +38,11 @@ func deleteRecursion(head *ListNode) *ListNode {
 }
 
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 
-func (l *ListNode)PrintList(){
+func (l *ListNode) PrintList() {
 	p := l
 	for p != nil {
 		fmt.Printf("%d ", p.Val)
@@ -53,7 +53,7 @@ func (l *ListNode)PrintList(){
 
 func (l *ListNode) AddToTail(n int) {
 	newL := &ListNode{
-		Val: n,
+		Val:  n,
 		Next: nil,
 	}
 	l.Next = newL

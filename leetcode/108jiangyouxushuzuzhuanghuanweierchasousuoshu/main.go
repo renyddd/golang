@@ -1,13 +1,13 @@
 package main
 
 type TreeNode struct {
-	Val int
+	Val         int
 	Left, Right *TreeNode
 }
 
 func sortedArrayToBST(nums []int) *TreeNode {
 	// 此处已将 nums 切片的原长度抽象为了递归函数的左右边界
-	return construct(nums, 0, len(nums) - 1)
+	return construct(nums, 0, len(nums)-1)
 }
 
 func construct(nums []int, leftBoundary, rightBoundary int) *TreeNode {
@@ -18,8 +18,8 @@ func construct(nums []int, leftBoundary, rightBoundary int) *TreeNode {
 	rootIndex := (leftBoundary + rightBoundary) / 2
 	root := new(TreeNode)
 	root.Val = nums[rootIndex]
-	root.Left = construct(nums, leftBoundary, rootIndex - 1)
-	root.Right = construct(nums, rootIndex + 1, rightBoundary)
+	root.Left = construct(nums, leftBoundary, rootIndex-1)
+	root.Right = construct(nums, rootIndex+1, rightBoundary)
 
 	return root
 }

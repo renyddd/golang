@@ -52,7 +52,6 @@ func do_deserialize(s *[]string) *TreeNode {
 	return root
 }
 
-
 /**
  * Your Codec object will be instantiated and called as such:
  * ser := Constructor();

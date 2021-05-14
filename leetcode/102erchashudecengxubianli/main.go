@@ -88,7 +88,7 @@ func levelOrderWithQueueByChan(root *TreeNode) [][]int {
 		return nil
 	}
 	res := make([][]int, 0)
-	toProcessLevelNodes := make(chan *TreeNode,800)
+	toProcessLevelNodes := make(chan *TreeNode, 800)
 	toProcessLevelNodes <- root
 
 	for len(toProcessLevelNodes) > 0 {
@@ -97,7 +97,7 @@ func levelOrderWithQueueByChan(root *TreeNode) [][]int {
 
 		var v *TreeNode
 		for len(toProcessLevelNodes) > 0 {
-			v = <- toProcessLevelNodes
+			v = <-toProcessLevelNodes
 			aLevelRes = append(aLevelRes, v.Val)
 			if v.Left != nil {
 				tmpLevelNodes <- v.Left

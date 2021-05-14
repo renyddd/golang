@@ -54,11 +54,11 @@ func flatten_Iterate(root *TreeNode) {
 func flattenIterateVisited(root *TreeNode) {
 	type Elem struct {
 		Visited bool
-		Node *TreeNode
+		Node    *TreeNode
 	}
 	var (
 		stack = make([]Elem, 0)
-		list = make([]*TreeNode, 0)
+		list  = make([]*TreeNode, 0)
 	)
 	stack = append(stack, Elem{false, root})
 

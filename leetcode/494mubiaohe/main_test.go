@@ -157,7 +157,7 @@ func Test_findTargetSecondTry(t *testing.T) {
 			want: 1,
 		},
 		{
-			name:"t8",
+			name: "t8",
 			args: args{[]int{1}, -1},
 			want: 1,
 		},

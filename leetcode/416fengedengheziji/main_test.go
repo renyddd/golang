@@ -27,9 +27,9 @@ func Test_canPartition(t *testing.T) {
 			want: true,
 		},
 		{
-			name:"t3",
+			name: "t3",
 			args: args{
-				[]int{1,2,3,5},
+				[]int{1, 2, 3, 5},
 			},
 			want: false,
 		},

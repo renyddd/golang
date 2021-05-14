@@ -1,14 +1,14 @@
 package main
 
 type TreeNode struct {
-	Val int
+	Val         int
 	Left, Right *TreeNode
 }
 
 /* 与 105 同样的处理套路
    由 inorder 切片确定左右子树的长度
    由 postorder 切片确定 root 跟节点的索引
- */
+*/
 
 func buildTree(inorder []int, postorder []int) *TreeNode {
 	if len(inorder) < 1 {

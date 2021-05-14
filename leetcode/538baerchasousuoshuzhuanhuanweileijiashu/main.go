@@ -4,9 +4,10 @@ type TreeNode struct {
 	Val         int
 	Left, Right *TreeNode
 }
+
 /*
-		注意题解中的求和方式
- */
+	注意题解中的求和方式
+*/
 //ref: https://leetcode-cn.com/problems/convert-bst-to-greater-tree/
 
 func convertBST(root *TreeNode) *TreeNode {

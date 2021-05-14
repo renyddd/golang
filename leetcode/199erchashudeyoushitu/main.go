@@ -15,12 +15,12 @@ package main
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/binary-tree-right-side-view
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
- */
+*/
 
 // 这不就是层序遍历后输出每个切片的最后的元素
 
 type TreeNode struct {
-	Val int
+	Val         int
 	Left, Right *TreeNode
 }
 
@@ -50,7 +50,6 @@ func rightSideViewNotGraceful(root *TreeNode) []int {
 		toProcessLevel = tmpLevelNodes
 		res = append(res, aLevelRes)
 	}
-
 
 	for i, _ := range res {
 		rr = append(rr, res[i][len(res[i])-1])
@@ -109,8 +108,8 @@ func rightSideView(root *TreeNode) []int {
 		}
 
 		// 根右左，非标准的后序遍历
-		DFS(node.Right, d + 1)
-		DFS(node.Left, d + 1)
+		DFS(node.Right, d+1)
+		DFS(node.Left, d+1)
 	}
 
 	DFS(root, 0)

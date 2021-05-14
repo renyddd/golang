@@ -37,8 +37,8 @@ func partition(a []int, left, right int) int {
 	}
 
 	/* 完成最后一组需要交换的数据
-		如：{4, 3} 此时 left 停留在 4；right, pivot 停留在 3 上
-	 */
+	如：{4, 3} 此时 left 停留在 4；right, pivot 停留在 3 上
+	*/
 	if a[left] != a[pivot] {
 		a[left], a[pivot] = a[pivot], a[right]
 	}

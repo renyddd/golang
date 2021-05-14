@@ -19,7 +19,7 @@ func strStr(haystack string, needle string) int {
 	if l == 0 {
 		return 0
 	}
-	if L == 0 || L < l{
+	if L == 0 || L < l {
 		return -1
 	}
 

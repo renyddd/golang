@@ -27,7 +27,7 @@ func doInvertTree_iteration(root *TreeNode) *TreeNode {
 
 	type Elem struct {
 		Visited bool
-		Node *TreeNode
+		Node    *TreeNode
 	}
 	stack := make([]Elem, 1)
 	stack = append(stack, Elem{

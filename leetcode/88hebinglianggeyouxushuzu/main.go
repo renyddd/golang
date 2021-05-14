@@ -6,17 +6,18 @@ import (
 )
 
 func main() {
-	merge([]int{1,2,4,6,0,0,0}, 4, []int{3,4,5,7}, 0)
+	merge([]int{1, 2, 4, 6, 0, 0, 0}, 4, []int{3, 4, 5, 7}, 0)
 }
+
 /*
 	输入：
 	nums1 = [1,2,3,0,0,0], m = 3
 	nums2 = [2,5,6],       n = 3
 
 	输出：[1,2,2,3,5,6]
- */
+*/
 
-func merge(nums1 []int, m int, nums2 []int, n int)  {
+func merge(nums1 []int, m int, nums2 []int, n int) {
 	nums1 = append(nums1[:m], nums2...)
 	fmt.Println(nums1)
 
@@ -31,7 +32,7 @@ func merge(nums1 []int, m int, nums2 []int, n int)  {
 	fmt.Println(nums1)
 }
 
-func mergeSortPackage(nums1 []int, m int, nums2 []int, n int)  {
+func mergeSortPackage(nums1 []int, m int, nums2 []int, n int) {
 	nums1 = append(nums1[:m], nums2...)
 	sort.Ints(nums1)
 	fmt.Println(nums1)

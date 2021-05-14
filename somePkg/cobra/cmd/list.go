@@ -12,7 +12,7 @@ func init() {
 }
 
 var listCmd = &cobra.Command{
-	Use: "list [dir]",
+	Use:   "list [dir]",
 	Short: "just imitate ls",
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) < 1 {
@@ -30,4 +30,3 @@ var listCmd = &cobra.Command{
 		}
 	},
 }
-

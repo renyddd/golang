@@ -22,8 +22,8 @@ func minDepthDFs(root *TreeNode) int {
 		if curNode.Left == nil && curNode.Right == nil {
 			visitedDepth[d] = struct{}{}
 		}
-		DFS(curNode.Left, d + 1)
-		DFS(curNode.Right, d + 1)
+		DFS(curNode.Left, d+1)
+		DFS(curNode.Right, d+1)
 	}
 
 	DFS(root, 1)
@@ -69,7 +69,7 @@ func minDepthBFS(root *TreeNode) int {
 /*
 ref: https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/
 先看上面的
- */
+*/
 
 // input: root = [3,9,20,nil,nil,15,7]
 // 首先了解树的特性及到达叶子结点时的特性
@@ -128,9 +128,9 @@ func minDepthBreadth_old(root *TreeNode) int {
 	count = append(count, 1)
 
 	/*
-	相比较而言，这是队列的另外一种使用方式
-	只不过当用 toProcessNodes, nextLevelNodes 时，一次循环就是一层
-	 */
+		相比较而言，这是队列的另外一种使用方式
+		只不过当用 toProcessNodes, nextLevelNodes 时，一次循环就是一层
+	*/
 	for i := 0; i < len(queue); i++ {
 		node := queue[i]
 		depth := count[i]
@@ -139,11 +139,11 @@ func minDepthBreadth_old(root *TreeNode) int {
 		}
 		if node.Left != nil {
 			queue = append(queue, node.Left)
-			count = append(count, depth + 1)
+			count = append(count, depth+1)
 		}
 		if node.Right != nil {
 			queue = append(queue, node.Right)
-			count = append(count, depth + 1)
+			count = append(count, depth+1)
 		}
 	}
 	return 0

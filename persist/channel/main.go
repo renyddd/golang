@@ -26,7 +26,7 @@ func main() {
 
 func GenerateDateWithError(ch chan<- int) {
 	for i := 0; i < 10000; i++ {
-		if i % 1340 == 0 {
+		if i%1340 == 0 {
 			time.Sleep(100000 * time.Microsecond)
 			ch <- i
 			log.Println("Error occur with:", i)

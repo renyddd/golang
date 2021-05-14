@@ -10,7 +10,7 @@ func TestPalindrome(t *testing.T) {
 
 	var tests = []struct {
 		input int
-		want bool
+		want  bool
 	}{
 		{121, true},
 		{0, true},

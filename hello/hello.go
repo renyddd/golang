@@ -14,7 +14,7 @@ func main() {
 
 	live5seconds := func() {
 		log.Println("sleep")
-		time.Sleep(5*time.Second)
+		time.Sleep(5 * time.Second)
 	}
 
 	go func() {
@@ -26,20 +26,18 @@ func main() {
 	}()
 
 	done := make(chan bool)
-	ticker := time.NewTicker(3*time.Second)
+	ticker := time.NewTicker(3 * time.Second)
 	defer ticker.Stop()
 	for {
 		go live5seconds()
 		select {
-		case <- ticker.C:
+		case <-ticker.C:
 			log.Println("tick ...")
 			continue
-		case <- done:
+		case <-done:
 			break
 		}
 	}
-
-
 
 	wg.Wait()
 }

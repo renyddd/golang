@@ -38,7 +38,7 @@ func maxProfit(prices []int) int {
 
 	for i := 1; i < len(prices); i++ {
 		minprice = min(prices[i], minprice)
-		dp[i] = max(dp[i-1], dp[i] - minprice)
+		dp[i] = max(dp[i-1], dp[i]-minprice)
 	}
 
 	// dp 切片是一个将最佳收益保留至最后的数组
@@ -59,7 +59,6 @@ func min(i, j int) int {
 	return j
 }
 
-
 func maxProfit1(prices []int) int {
 	minprice := math.MaxInt64
 	maxprofit := 0
@@ -78,5 +77,3 @@ func maxProfit1(prices []int) int {
 
 	return maxprofit
 }
-
-

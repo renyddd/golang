@@ -32,7 +32,7 @@ func odd(in <-chan int) <-chan int {
 	out := make(chan int)
 	go func() {
 		for v := range in {
-			if v % 2 == 0 {
+			if v%2 == 0 {
 				out <- v
 			}
 		}

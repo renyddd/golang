@@ -1,20 +1,21 @@
 package main
 
 type Node struct {
-	Val int
+	Val      int
 	Children []*Node
 }
+
 func postorder(root *Node) []int {
 	type Elem struct {
 		visited bool
-		TNode *Node
+		TNode   *Node
 	}
 
 	stack := make([]Elem, 0)
 	res := make([]int, 0)
 	stack = append(stack, Elem{
 		visited: false,
-		TNode: root,
+		TNode:   root,
 	})
 
 	for len(stack) > 0 {
@@ -23,7 +24,7 @@ func postorder(root *Node) []int {
 
 		if node.TNode != nil {
 			if !node.visited {
-				stack = append(stack, Elem{true,  node.TNode})
+				stack = append(stack, Elem{true, node.TNode})
 				for i := len(node.TNode.Children); i >= 0; i-- {
 					stack = append(stack, Elem{false, node.TNode.Children[i]})
 				}

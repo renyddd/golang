@@ -73,10 +73,10 @@ func TestBsearchLast(t *testing.T) {
 }
 
 func TestBsearchFBigger(t *testing.T) {
-	nums := []int{1,2,6,7,8,9,13,14}
+	nums := []int{1, 2, 6, 7, 8, 9, 13, 14}
 	ref := map[int]int{
-		2: 1,
-		5: 2,
+		2:  1,
+		5:  2,
 		19: -1,
 		10: 6,
 	}
@@ -90,14 +90,14 @@ func TestBsearchFBigger(t *testing.T) {
 }
 
 func TestBsearchLSmaller(t *testing.T) {
-	nums := []int{1,2,6,7,8,9,13,14,20}
+	nums := []int{1, 2, 6, 7, 8, 9, 13, 14, 20}
 	ref := map[int]int{
-		1: 0,
-		5: 1,
-		15: 7,
+		1:   0,
+		5:   1,
+		15:  7,
 		203: 8,
-		0: -1,
-		-3: -1,
+		0:   -1,
+		-3:  -1,
 	}
 
 	for k, expect := range ref {

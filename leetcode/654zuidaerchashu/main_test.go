@@ -3,10 +3,10 @@ package main
 import "testing"
 
 func TestCopy(t *testing.T) {
-	nums := []int{1,2,3,4,5,6,7}
+	nums := []int{1, 2, 3, 4, 5, 6, 7}
 
 	left := make([]int, len(nums))
-	right := make([]int,len(nums))
+	right := make([]int, len(nums))
 	index := 3
 
 	l_l := copy(left, nums[:index])
@@ -17,7 +17,7 @@ func TestCopy(t *testing.T) {
 }
 
 func TestContruct(t *testing.T) {
-	ns := []int{4,2,62,5,7,8,35,6}
+	ns := []int{4, 2, 62, 5, 7, 8, 35, 6}
 	root := constructMaximumBinaryTree(ns)
 	t.Log(root)
 }

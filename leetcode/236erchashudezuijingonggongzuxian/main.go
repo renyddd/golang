@@ -25,7 +25,7 @@ func lowestCommonAncestor2(root, p, q *TreeNode) *TreeNode {
 	/*
 		**注意** 内部函数的内部变量名！
 		这个坑你想踩几次？
-	 */
+	*/
 	fDFS = func(curNode, p, q *TreeNode) bool {
 		if curNode == nil {
 			return false
@@ -46,12 +46,11 @@ func lowestCommonAncestor2(root, p, q *TreeNode) *TreeNode {
 	return res
 }
 
-
 /*
 	官方的另一种解法
 	利用该二叉树的值不重复的特性，可用一个 map[int]{*TreeNode, bool} 来存储每一个 val 值的父节点信息
 	再先利用 p 来遍历整个 map 路径并表示已访问过的节点，再当 q 来遍历整个 map 是一旦遇见访问过的节点便是最小公共祖先
- */
+*/
 
 func LowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 	if root == nil {
@@ -59,7 +58,7 @@ func LowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 	}
 
 	type Pair struct {
-		Node *TreeNode
+		Node    *TreeNode
 		Visited bool
 	}
 	// 存储 val 的父节点与是否被访问过的信息
@@ -73,7 +72,7 @@ func LowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 			pathMap[curNode.Left.Val] = &Pair{curNode, false}
 			DFS(curNode.Left)
 		}
-		if curNode.Right  != nil {
+		if curNode.Right != nil {
 			pathMap[curNode.Right.Val] = &Pair{curNode, false}
 			DFS(curNode.Right)
 		}

@@ -18,15 +18,15 @@ package main
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/partition-equal-subset-sum
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
- */
+*/
 
 func canPartition(nums []int) bool {
 	sum := 0
 	for _, v := range nums {
-		sum+= v
+		sum += v
 	}
 	// 总和是奇数，或者个数小于两个的天然错误
-	if sum % 2 > 0 || len(nums) < 2 {
+	if sum%2 > 0 || len(nums) < 2 {
 		return false
 	}
 	// amount 与之前题目相同，代表着背包的总大小，所能装的物品总量
@@ -35,7 +35,7 @@ func canPartition(nums []int) bool {
 	// 特殊初始化第一个元素
 	dp[0] = true
 
-	for i := 1; i < len(nums) + 1; i++ {
+	for i := 1; i < len(nums)+1; i++ {
 		index := i - 1
 		// 01 背包从后向前扫描
 		for j := amount; j >= nums[index]; j-- {

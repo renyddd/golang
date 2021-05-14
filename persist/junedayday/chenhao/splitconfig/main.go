@@ -6,12 +6,12 @@ import (
 )
 
 type Server struct {
-	Add string
-	Port int
-	Protocol string
-	Timeout time.Duration
+	Add       string
+	Port      int
+	Protocol  string
+	Timeout   time.Duration
 	MaxCounts int
-	TLS *tls.Config
+	TLS       *tls.Config
 }
 
 type Option func(server *Server)
@@ -37,12 +37,12 @@ func MaxCounts(m int) Option {
 func NewServer(addr string, port int, options ...Option) (*Server, error) {
 	// 对必填参数进行赋值，可选参数赋予默认值
 	srv := &Server{
-		Add: addr,
-		Port: port,
-		Protocol: "tcp",
-		Timeout: 30 * time.Second,
+		Add:       addr,
+		Port:      port,
+		Protocol:  "tcp",
+		Timeout:   30 * time.Second,
 		MaxCounts: 1000,
-		TLS: nil,
+		TLS:       nil,
 	}
 
 	for _, optionFunc := range options {

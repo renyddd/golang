@@ -5,8 +5,8 @@ import (
 )
 
 func main() {
-	n := []int{9,9,9}
-	n=plusOneRecursion(n)
+	n := []int{9, 9, 9}
+	n = plusOneRecursion(n)
 	fmt.Println(n)
 }
 
@@ -64,6 +64,7 @@ func Recursion(index int, d *[]int) {
 		return
 	}
 }
+
 /*
 	{1,2,3},
 	{1,1,9},
@@ -71,7 +72,7 @@ func Recursion(index int, d *[]int) {
 	{9,9,9},
 	{0},
 	{},
- */
+*/
 
 func plusOne(digits []int) []int {
 	l := len(digits)
@@ -79,7 +80,7 @@ func plusOne(digits []int) []int {
 		return []int{1}
 	}
 
-	for i := l-1; i >= 0; i-- {
+	for i := l - 1; i >= 0; i-- {
 		if digits[i] != 9 {
 			digits[i]++
 			return digits

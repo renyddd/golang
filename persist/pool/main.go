@@ -16,18 +16,18 @@ var bytePool = sync.Pool{
 func main() {
 	a := time.Now().Unix()
 	// 不使用对象池
-	for i := 0; i < 1000000000; i++{
-		obj := make([]byte,1024)
+	for i := 0; i < 1000000000; i++ {
+		obj := make([]byte, 1024)
 		_ = obj
 	}
 	b := time.Now().Unix()
 	// 使用对象池
-	for i := 0; i < 1000000000; i++{
+	for i := 0; i < 1000000000; i++ {
 		obj := bytePool.Get().(*[]byte)
 		_ = obj
 		bytePool.Put(obj)
 	}
 	c := time.Now().Unix()
-	fmt.Println("without pool ", b - a, "s")
-	fmt.Println("with    pool ", c - b, "s")
+	fmt.Println("without pool ", b-a, "s")
+	fmt.Println("with    pool ", c-b, "s")
 }

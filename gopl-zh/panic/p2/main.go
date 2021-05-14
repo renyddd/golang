@@ -22,12 +22,12 @@ func ffather() {
 
 	go fson()
 
-	time.Sleep(1*time.Second)
+	time.Sleep(1 * time.Second)
 }
 
 func protect(g func()) {
 	defer func() {
-		log.Println("done")  // Println executes normally even if there is a panic
+		log.Println("done") // Println executes normally even if there is a panic
 		if x := recover(); x != nil {
 			log.Printf("run time panic: %v", x)
 		}
@@ -38,7 +38,7 @@ func protect(g func()) {
 
 func main() {
 	protect(func() {
-		a := []int{1,2}
+		a := []int{1, 2}
 		_ = a[5]
 	})
 }

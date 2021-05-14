@@ -24,10 +24,3 @@ func Traverse(a [][]int) {
 		}
 	}
 }
-
-
-
-
-
-
-
