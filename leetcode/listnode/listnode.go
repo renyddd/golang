@@ -7,6 +7,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
+// PrintList .
 func (l *ListNode) PrintList() {
 	p := l
 	for p != nil {
@@ -24,6 +25,9 @@ func (l *ListNode) addToTail(n int) {
 	l.Next = newL
 }
 
+// MakeListNode usage:
+// head := listnode.MakeListNode([]int{1, 2, 3, 4, 5, 6})
+// h := (*ListNode)(unsafe.Pointer(head))
 func MakeListNode(nums []int) *ListNode {
 	head := new(ListNode)
 	p := head

@@ -20,6 +20,6 @@ require (
 	github.com/opencontainers/selinux v1.8.0 // indirect
 	github.com/spf13/cobra v1.1.1
 	github.com/syndtr/gocapability v0.0.0-20200815063812-42c35b437635 // indirect
-	google.golang.org/grpc v1.35.0 // indirect
+	google.golang.org/grpc v1.37.1 // indirect
 	gopkg.in/resty.v1 v1.12.0
 )
