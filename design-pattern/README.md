@@ -1,3 +1,11 @@
+# Grur/design-pattern
+1. [https://refactoring.guru/design-patterns](https://refactoring.guru/design-patterns)
+
+1. [https://refactoringguru.cn/design-patterns/go](https://refactoringguru.cn/design-patterns/go)
+
+
+
+
 ## some reference
 ### golang 实现
 1. https://github.com/senghoo/golang-design-pattern
