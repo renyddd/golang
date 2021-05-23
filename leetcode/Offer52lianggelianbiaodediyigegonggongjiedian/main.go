@@ -88,3 +88,35 @@ func getIntersectionNode3(headA, headB *ListNode) *ListNode {
 
 	return headA
 }
+
+// getIntersectionNode4 借助辅助栈
+// 如果两链表汇合了，则结尾一样长，故从结尾开始遍历时第一个不相同的节点
+// 的后继节点就是汇合处节点，故可用栈来模拟
+func getIntersectionNode4(headA, headB *ListNode) *ListNode {
+	var setStack func(*ListNode) []*ListNode
+	setStack = func(ln *ListNode) []*ListNode {
+		s := make([]*ListNode, 0)
+		for ln != nil {
+			s = append(s, ln)
+			ln = ln.Next
+		}
+		return s
+	}
+
+	s1, s2 := setStack(headA), setStack(headB)
+
+	// var Pop func([]*ListNode) (*ListNode, []*ListNode)
+	// Pop = func(s []*ListNode) (*ListNode, []*ListNode) {
+	// 	return s[len(s)-1], s[:len(s)-1]
+	// }
+
+	var key *ListNode
+
+	for i, j := len(s1)-1, len(s2)-1; i >= 0 && j >= 0; i, j = i-1, j-1 {
+		if s1[i] == s2[j] {
+			key = s1[i]
+		}
+	}
+
+	return key
+}
