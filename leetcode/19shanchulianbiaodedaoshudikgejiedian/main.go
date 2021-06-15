@@ -99,3 +99,24 @@ func removeNthFromEnd3(head *ListNode, n int) *ListNode {
 
 	return dummy.Next
 }
+
+// https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/comments/229867
+func removeNthFromEnd4(head *ListNode, n int) *ListNode {
+	num := 0
+
+	var iter func(*ListNode) *ListNode
+	iter = func(ln *ListNode) *ListNode {
+		if ln == nil {
+			return ln
+		}
+		ln.Next = iter(ln.Next)
+		num++
+
+		if num == n {
+			return ln.Next
+		}
+		return ln
+	}
+
+	return iter(head)
+}
