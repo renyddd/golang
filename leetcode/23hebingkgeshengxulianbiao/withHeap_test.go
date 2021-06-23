@@ -2,8 +2,8 @@ package main
 
 import (
 	"container/heap"
-	"testing"
 	"fmt"
+	"testing"
 )
 
 func TestIntHeap(t *testing.T) {
