@@ -25,13 +25,16 @@ func (h *intHeap) Pop() interface{} {
 
 func mergeKLists(lists []*ListNode) *ListNode {
 	h := &intHeap{}
-	heap.Init(h)
 
 	for _, l := range lists {
 		for p := l; p != nil; p = p.Next {
-			heap.Push(h, p.Val)
+			// heap.Push(h, p.Val)
+			// 之前插入元素时，无需始终保持堆序性质，使用直接向尾部添加的方式即可
+			h.Push(p.Val)
 		}
 	}
+
+	heap.Init(h)
 
 	tail := &ListNode{Val: -1}
 	dummyHead := tail
