@@ -14,12 +14,13 @@ require (
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-resty/resty/v2 v2.4.0
 	github.com/gogo/googleapis v1.4.0 // indirect
+	github.com/golang/protobuf v1.5.2
 	github.com/google/uuid v1.2.0 // indirect
 	github.com/opencontainers/image-spec v1.0.1 // indirect
 	github.com/opencontainers/runc v0.1.1 // indirect
 	github.com/opencontainers/selinux v1.8.0 // indirect
 	github.com/spf13/cobra v1.1.1
 	github.com/syndtr/gocapability v0.0.0-20200815063812-42c35b437635 // indirect
-	google.golang.org/grpc v1.37.1 // indirect
+	google.golang.org/grpc v1.37.1
 	gopkg.in/resty.v1 v1.12.0
 )
