@@ -1,0 +1,25 @@
+syntax = "proto3";
+// https://developers.google.com/protocol-buffers/docs/gotutorial
+package protocolbuffers;
+
+option go_package = "github.com/renyddd/golang/somePkg/pbApp/server/v1";
+
+import "google/api/annotations.proto";
+
+service Greeter {
+  // rpc SayHello (HelloRequest) returns (HelloReply) {}
+  rpc SayHello (HelloRequest) returns (HelloReply) {
+    option (google.api.http) = {
+      post: "/v1/sayhello"
+      body: "*"
+    };
+  }
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloReply {
+  string msg = 1;
+}

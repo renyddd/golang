@@ -17,7 +17,7 @@ func Rpc_SayHello(ctx context.Context, client protocolbuffers.GreeterClient, msg
 		return "", err
 	}
 
-	return hReplay.Message, nil
+	return hReplay.Msg, nil
 }
 
 func main() {

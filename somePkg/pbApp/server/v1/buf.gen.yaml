@@ -1,0 +1,22 @@
+# Not use yet, does not install buf
+version: v1beta1
+name: github.com/renyddd/golang/somePkg/pbApp/server/v1
+deps:
+  - buf.build/beta/googleapis
+plugins:
+  - name: go
+    out: gen/go
+    opt:
+      - paths=source_relative
+  - name: go-grpc
+    out: gen/go
+    opt:
+      - paths=source_relative
+  - name: grpc-gateway
+    out: gen/go
+    opt:
+      - paths=source_relative
+      - grpc_api_configuration=path/to/config.yaml
+      - standalone=true
+
+      # -I$GOPATH/src -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis

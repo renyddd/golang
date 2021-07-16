@@ -6,21 +6,23 @@ import (
 	"context"
 	"fmt"
 	"log"
-	"net"
+	"net/http"
 
-	"github.com/renyddd/golang/somePkg/protocolbuffers"
+	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
+	gw "github.com/renyddd/golang/somePkg/pbApp/server/v1"
+
 	"google.golang.org/grpc"
 )
 
 type Server struct {
-	protocolbuffers.UnimplementedGreeterServer
+	gw.UnimplementedGreeterServer
 	greeting string
 }
 
-func (s *Server) SayHello(ctx context.Context, in *protocolbuffers.HelloRequest) (*protocolbuffers.HelloReply, error) {
+func (s *Server) SayHello(ctx context.Context, in *gw.HelloRequest) (*gw.HelloReply, error) {
 	log.Println("[log] server ", s, in)
-	return &protocolbuffers.HelloReply{
-		Message: s.greeting + in.Name,
+	return &gw.HelloReply{
+		Msg: s.greeting + in.Name,
 	}, nil
 }
 
@@ -32,13 +34,19 @@ func newServer() *Server {
 }
 
 func main() {
-	lis, err := net.Listen("tcp", fmt.Sprintf("localhost:%d", 8081))
+	ctx := context.Background()
+	ctx, cancel := context.WithCancel(ctx)
+	defer cancel()
+
+	mux := runtime.NewServeMux()
+	opts := []grpc.DialOption{grpc.WithInsecure()}
+	err := gw.RegisterGreeterHandlerFromEndpoint(ctx, mux, fmt.Sprintf("localhost:%d", 8081), opts)
 	if err != nil {
 		panic(err)
 	}
 
-	var opts []grpc.ServerOption
-	grpcServer := grpc.NewServer(opts...)
-	protocolbuffers.RegisterGreeterServer(grpcServer, newServer())
-	grpcServer.Serve(lis)
+	err = http.ListenAndServe(":8081", mux)
+	if err != nil {
+		panic(err)
+	}
 }
