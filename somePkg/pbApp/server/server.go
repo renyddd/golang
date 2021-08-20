@@ -6,6 +6,7 @@ import (
 	"context"
 	"fmt"
 	"log"
+	"net"
 	"net/http"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
@@ -16,24 +17,40 @@ import (
 
 type Server struct {
 	gw.UnimplementedGreeterServer
-	greeting string
+	greetingPrefix string
 }
 
 func (s *Server) SayHello(ctx context.Context, in *gw.HelloRequest) (*gw.HelloReply, error) {
 	log.Println("[log] server ", s, in)
 	return &gw.HelloReply{
-		Msg: s.greeting + in.Name,
+		Msg: s.greetingPrefix + in.Name,
 	}, nil
 }
 
 func newServer() *Server {
 	s := &Server{
-		greeting: "Hello, ",
+		greetingPrefix: "Hello, ",
 	}
 	return s
 }
 
 func main() {
+	ServerWithoutGateway()
+}
+
+func ServerWithoutGateway() {
+	lis, err := net.Listen("tcp", "localhost:8081")
+	if err != nil {
+		log.Fatalf("failed to listen: %v", err)
+	}
+
+	var opts []grpc.ServerOption
+	grpcServer := grpc.NewServer(opts...)
+	gw.RegisterGreeterServer(grpcServer, newServer())
+	grpcServer.Serve(lis)
+}
+
+func ServerWithGateway() {
 	ctx := context.Background()
 	ctx, cancel := context.WithCancel(ctx)
 	defer cancel()

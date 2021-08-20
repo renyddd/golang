@@ -4,12 +4,12 @@ import (
 	"context"
 	"log"
 
-	"github.com/renyddd/golang/somePkg/protocolbuffers"
+	pb "github.com/renyddd/golang/somePkg/pbApp/server/v1"
 	"google.golang.org/grpc"
 )
 
-func Rpc_SayHello(ctx context.Context, client protocolbuffers.GreeterClient, msg string) (string, error) {
-	hRequest := &protocolbuffers.HelloRequest{
+func Rpc_SayHello(ctx context.Context, client pb.GreeterClient, msg string) (string, error) {
+	hRequest := &pb.HelloRequest{
 		Name: msg,
 	}
 	hReplay, err := client.SayHello(ctx, hRequest)
@@ -31,7 +31,7 @@ func main() {
 	}
 	defer conn.Close()
 
-	client := protocolbuffers.NewGreeterClient(conn)
+	client := pb.NewGreeterClient(conn)
 
 	msg, err := Rpc_SayHello(context.Background(), client, "Alice")
 	if err != nil {
