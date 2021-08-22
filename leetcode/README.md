@@ -105,8 +105,8 @@
 
 ## Training Camp
 - [ ] Day1 原地修改数组：26, 27
-- [ ] Day 前缀和：303，506
-- [ ] 
+- [ ] Day2 前缀和：303，506
+- [ ] Day3 查分数组：1094
 
 ## 二叉树题目汇总
 [官方合集](https://leetcode.com/tag/tree/)

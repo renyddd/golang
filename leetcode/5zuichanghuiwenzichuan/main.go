@@ -20,8 +20,33 @@ package main
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/longest-palindromic-substring
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
- */
+*/
 
-// longestPalindrome 首先可以采用栈的模式来逐个遍历
+// longestPalindrome 以每一个遍历的字符为中心，向两边散开来判断并更新最长回文传
 func longestPalindrome(s string) string {
+	longest := ""
+	for i := 0; i < len(s); i++ {
+		s1 := palindrome(s, i, i)
+		s2 := palindrome(s, i, i+1)
+
+		if len(s1) > len(longest) {
+			longest = s1
+		}
+		if len(s2) > len(longest) {
+			longest = s2
+		}
+	}
+
+	return longest
+}
+
+// palindrome 查找子回文串的方法
+func palindrome(s string, l, r int) string {
+	for l >= 0 && r < len(s) && s[l] == s[r] {
+		l--
+		r++
+	}
+
+	// 返回的是当前失败后，中间的包围串
+	return s[l+1 : r]
 }
