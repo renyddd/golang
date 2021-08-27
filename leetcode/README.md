@@ -104,10 +104,14 @@
 - [ ] 739 每日温度
 
 ## Training Camp
+> https://www.yuque.com/books/share/f7a1194d-fe2f-4096-8548-a470790543d2?
 - [x] Day1 原地修改数组：26, 27
 - [x] Day2 前缀和：303，506
 - [x] Day3 查分数组：1094
-- [x] Day4 二分查找：704，34
+- [x] Day4 回文串
+- [x] Day5 二分查找：704，34
+- [x] Day6 二分查找：704，34
+- [ ] Day7 滑动窗口：3，567，438，76
 
 ## 二叉树题目汇总
 [官方合集](https://leetcode.com/tag/tree/)
