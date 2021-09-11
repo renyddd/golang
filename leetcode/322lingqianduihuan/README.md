@@ -86,3 +86,34 @@ func coinChange(coins []int, amount int) int {
 	return find(amount)
 }
 ```
+
+暴力+记忆优化题解请参考：[https://leetcode-cn.com/problems/coin-change/solution/bao-li-jie-fa-jia-memo-you-hua-by-renydd-5n1r/](https://leetcode-cn.com/problems/coin-change/solution/bao-li-jie-fa-jia-memo-you-hua-by-renydd-5n1r/)
+
+有以下几点需要在思考时提前想到：
+1. 动态规划是一个从下而上的方法；
+2. 选用归纳的方法思考，目标求 F(i) 时，则可假设你已有 F(0) 到 F(i-1) 到结果，而你所要寻找的就是如何推演
+
+这道题的推演方式：F(i) 取自遍历所有 coins 时，对每一种硬币做了选择后进行比较，选取其与现有 F(i) 的最小值
+
+```golang
+func coinChange(coins []int, amount int) int {
+	dp := make([]int, amount+1) // amount 值直接作为索引
+	for i, _ := range dp {
+		dp[i] = amount + 1 // 默认 todo
+	}
+	dp[0] = 0
+
+	for i := 1; i <= amount; i++ {
+		for j := 0; j < len(coins); j++ {
+			if coins[j] <= i { // 不能用 i > coins[j]，否则会略过类似 i=1, coins[j]=1 时对 dp 的更新
+				dp[i] = min(dp[i], dp[i-coins[j]]+1)
+			}
+		}
+	}
+
+	if dp[amount] > amount {
+		return -1
+	}
+	return dp[amount]
+}
+```

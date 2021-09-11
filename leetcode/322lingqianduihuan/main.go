@@ -79,6 +79,28 @@ func coinChange2(coins []int, amount int) int {
 	return find(amount)
 }
 
+// coinChange3 使用动态规划
+func coinChange3(coins []int, amount int) int {
+	dp := make([]int, amount+1) // amount 值直接作为索引
+	for i, _ := range dp {
+		dp[i] = amount + 1 // 默认 todo
+	}
+	dp[0] = 0
+
+	for i := 1; i <= amount; i++ {
+		for j := 0; j < len(coins); j++ {
+			if i > coins[j] {
+				dp[i] = min(dp[i], dp[i-coins[j]]+1)
+			}
+		}
+	}
+
+	if dp[amount] > amount {
+		return -1
+	}
+	return dp[amount]
+}
+
 /* old do not look */
 // func coinChange_old(coins []int, amount int) int {
 // 	n := len(coins) // n 中硬币也就代表着 n 中可能发生状态转移的机会
